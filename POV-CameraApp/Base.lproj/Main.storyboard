@@ -148,6 +148,7 @@
                             <outletCollection property="gestureRecognizers" destination="F4u-JN-oc1" appends="YES" id="1Ga-fc-qGx"/>
                         </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="lza-Cn-iYJ"/>
                     <connections>
                         <outlet property="ShowGridButton" destination="rRh-dE-1f6" id="gWq-W3-kcv"/>
                         <outlet property="bottomView" destination="YYJ-cs-Rp9" id="W6o-gE-WMB"/>
@@ -180,24 +181,24 @@
         <!--View Controller-->
         <scene sceneID="c59-WL-K58">
             <objects>
-                <viewController id="fh2-Me-rAV" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="fh2-Me-rAV" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rhs-bc-x7G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Help1" translatesAutoresizingMaskIntoConstraints="NO" id="9i9-oN-aHh">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HELP" translatesAutoresizingMaskIntoConstraints="NO" id="9i9-oN-aHh">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WW-q1-QGT">
-                                <rect key="frame" x="117.66666666666669" y="828" width="179" height="34"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap screen to continue..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WW-q1-QGT">
+                                <rect key="frame" x="132.33333333333337" y="846.33333333333337" width="149.66666666666663" height="15.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2UN-hy-Wmf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2UN-hy-Wmf">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <connections>
-                                    <segue destination="TVO-s2-mA2" kind="modal" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="TBZ-Is-Bvi"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="BUL-fh-zBu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -224,55 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tHD-ZP-j8b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2375" y="138"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="bOi-vY-4dp">
-            <objects>
-                <viewController id="TVO-s2-mA2" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QmS-WS-lhh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Help2" translatesAutoresizingMaskIntoConstraints="NO" id="JkA-q8-QH0">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoX-f3-0A8">
-                                <rect key="frame" x="117.66666666666669" y="828" width="179" height="34"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsT-b6-K7z">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="modal" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="M0W-tW-no3"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="JkA-q8-QH0" firstAttribute="centerY" secondItem="QmS-WS-lhh" secondAttribute="centerY" id="1pa-za-YvU"/>
-                            <constraint firstAttribute="trailing" secondItem="xsT-b6-K7z" secondAttribute="trailing" id="8kY-Nr-h8f"/>
-                            <constraint firstItem="yoX-f3-0A8" firstAttribute="bottom" secondItem="cDb-TL-ZZN" secondAttribute="bottom" id="9VW-wJ-eOI"/>
-                            <constraint firstItem="yoX-f3-0A8" firstAttribute="centerX" secondItem="QmS-WS-lhh" secondAttribute="centerX" id="AHK-9G-bD3"/>
-                            <constraint firstItem="xsT-b6-K7z" firstAttribute="centerX" secondItem="QmS-WS-lhh" secondAttribute="centerX" id="AxE-o9-QFo"/>
-                            <constraint firstAttribute="bottom" secondItem="xsT-b6-K7z" secondAttribute="bottom" id="LAO-Jo-96M"/>
-                            <constraint firstItem="xsT-b6-K7z" firstAttribute="leading" secondItem="QmS-WS-lhh" secondAttribute="leading" id="Mmt-Q4-EYu"/>
-                            <constraint firstItem="xsT-b6-K7z" firstAttribute="top" secondItem="QmS-WS-lhh" secondAttribute="top" id="Njo-5f-ALE"/>
-                            <constraint firstItem="xsT-b6-K7z" firstAttribute="centerY" secondItem="QmS-WS-lhh" secondAttribute="centerY" id="YRZ-ve-MQC"/>
-                            <constraint firstItem="JkA-q8-QH0" firstAttribute="centerX" secondItem="QmS-WS-lhh" secondAttribute="centerX" id="bgk-hV-qVx"/>
-                            <constraint firstAttribute="trailing" secondItem="JkA-q8-QH0" secondAttribute="trailing" id="ia8-6W-LqJ"/>
-                            <constraint firstItem="JkA-q8-QH0" firstAttribute="leading" secondItem="QmS-WS-lhh" secondAttribute="leading" id="t5H-cN-eFJ"/>
-                            <constraint firstItem="JkA-q8-QH0" firstAttribute="top" secondItem="QmS-WS-lhh" secondAttribute="top" id="zHD-0h-2FA"/>
-                            <constraint firstAttribute="bottom" secondItem="JkA-q8-QH0" secondAttribute="bottom" id="zM6-6J-8WG"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="cDb-TL-ZZN"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a3d-tV-yhC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3559" y="138"/>
+            <point key="canvasLocation" x="2196" y="138"/>
         </scene>
         <!--RuleOfSymmetry-->
         <scene sceneID="n0R-UV-MvU">
@@ -336,8 +289,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Help1" width="828" height="1792"/>
-        <image name="Help2" width="828" height="1792"/>
+        <image name="HELP" width="414" height="896"/>
         <image name="Info" width="28" height="28"/>
         <image name="PhotoLibrary" width="677" height="677"/>
         <image name="Rotate" width="38" height="29"/>
