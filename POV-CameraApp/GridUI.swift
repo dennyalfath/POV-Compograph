@@ -102,7 +102,7 @@ extension ViewController {
         let label = UILabel()
         label.frame = CGRect(x: -50, y: 0, width: 200, height: 100)
         label.textAlignment = .center
-        label.font = UIFont.systemFont(ofSize: 15)
+        label.font = UIFont.boldSystemFont(ofSize: 15)
         label.text = gridType[row].uppercased()
         
 
