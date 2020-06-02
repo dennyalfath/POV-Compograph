@@ -108,7 +108,7 @@ extension ViewController {
 
         if row == SwipeCode {
             label.textColor = UIColor.yellow
-            print("true ", " :     ", row, " | ", SwipeCode)
+            print("true ", " :     ", row, " | ", SwipeCode) 
         }
         else {
             label.textColor = UIColor.white

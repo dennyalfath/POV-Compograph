@@ -32,7 +32,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     //Variable for Grid
     var gridCondition: Int = 1                                                // Represent Grid On or Off
     var gridMode: Bool = false                                                // If Grid Condition on means edit the grid is true
-    let gridType = [String](arrayLiteral: "The Phi Grid", "Fibonacci Spiral", "Rule of Third", "Golden Triangle", "Diagonal Rule", "Rule of Symmetry")                                           // Grids Style Data
+    let gridType = [String](arrayLiteral: "The Phi Grid", "Fibonacci Spiral", "Rule of Third", "Golden Triangle", "Diagonal Rule", "Rule of Symmetry")                                            // Grids Style Data
     var GridCode = "Rule of Third"                                            // Tracking what grid is in use right now (String)
     var RoTColorCode = 0                                                      // Rule of Third Color numbers
     var GTColorCode = 0                                                       // Golden Triangle Color numbers

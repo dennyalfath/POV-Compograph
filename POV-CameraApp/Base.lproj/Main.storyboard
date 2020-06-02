@@ -112,6 +112,20 @@
                                     <action selector="gridInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="knH-Nh-tm9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzZ-vk-pUz">
+                                <rect key="frame" x="326" y="43" width="30" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="O3o-EG-ftm"/>
+                                    <constraint firstAttribute="height" constant="27" id="Oaa-Qr-q00"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Help">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fh2-Me-rAV" kind="modal" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="eI9-3I-yrZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
@@ -135,9 +149,12 @@
                             <constraint firstItem="YYJ-cs-Rp9" firstAttribute="top" secondItem="gLQ-ps-KlM" secondAttribute="bottom" id="Nrw-84-AvH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YYJ-cs-Rp9" secondAttribute="bottom" constant="45" id="Pe2-gG-WHu"/>
                             <constraint firstItem="rRh-dE-1f6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="2" id="R7p-MQ-xS6"/>
+                            <constraint firstItem="gLQ-ps-KlM" firstAttribute="top" secondItem="wzZ-vk-pUz" secondAttribute="bottom" constant="8" id="TPU-Re-UVX"/>
                             <constraint firstItem="RhS-Yz-86X" firstAttribute="top" secondItem="rRh-dE-1f6" secondAttribute="bottom" constant="8" id="USs-OH-F0q"/>
                             <constraint firstItem="cup-VV-alR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="UiL-CQ-8Ec"/>
+                            <constraint firstItem="RhS-Yz-86X" firstAttribute="top" secondItem="wzZ-vk-pUz" secondAttribute="bottom" constant="8" id="Vjd-ki-AcT"/>
                             <constraint firstItem="J7T-Ej-cFV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZIB-LA-cEq"/>
+                            <constraint firstItem="J7T-Ej-cFV" firstAttribute="leading" secondItem="wzZ-vk-pUz" secondAttribute="trailing" constant="10" id="ZmX-m2-3EI"/>
                             <constraint firstItem="RhS-Yz-86X" firstAttribute="top" secondItem="J7T-Ej-cFV" secondAttribute="bottom" constant="8" id="bOE-Z9-pED"/>
                             <constraint firstItem="YYJ-cs-Rp9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cXQ-4v-szw"/>
                             <constraint firstItem="gLQ-ps-KlM" firstAttribute="top" secondItem="rRh-dE-1f6" secondAttribute="bottom" constant="8" id="dyZ-c7-Bvb"/>
@@ -183,6 +200,103 @@
                 </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="c59-WL-K58">
+            <objects>
+                <viewController id="fh2-Me-rAV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rhs-bc-x7G">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Help1" translatesAutoresizingMaskIntoConstraints="NO" id="9i9-oN-aHh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WW-q1-QGT">
+                                <rect key="frame" x="117.66666666666669" y="828" width="179" height="34"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2UN-hy-Wmf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <connections>
+                                    <segue destination="TVO-s2-mA2" kind="modal" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="TBZ-Is-Bvi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2UN-hy-Wmf" firstAttribute="centerY" secondItem="rhs-bc-x7G" secondAttribute="centerY" id="1FS-iA-B1G"/>
+                            <constraint firstItem="2UN-hy-Wmf" firstAttribute="top" secondItem="rhs-bc-x7G" secondAttribute="top" id="42H-Kp-ETm"/>
+                            <constraint firstItem="5WW-q1-QGT" firstAttribute="bottom" secondItem="gGD-7o-YCJ" secondAttribute="bottom" id="89P-W7-DQi"/>
+                            <constraint firstAttribute="bottom" secondItem="2UN-hy-Wmf" secondAttribute="bottom" id="DXD-8s-KbO"/>
+                            <constraint firstItem="9i9-oN-aHh" firstAttribute="centerY" secondItem="rhs-bc-x7G" secondAttribute="centerY" id="Mxz-XK-gwq"/>
+                            <constraint firstItem="2UN-hy-Wmf" firstAttribute="centerX" secondItem="rhs-bc-x7G" secondAttribute="centerX" id="OKi-35-Jvd"/>
+                            <constraint firstItem="2UN-hy-Wmf" firstAttribute="leading" secondItem="rhs-bc-x7G" secondAttribute="leading" id="U4n-b1-ld5"/>
+                            <constraint firstItem="9i9-oN-aHh" firstAttribute="top" secondItem="rhs-bc-x7G" secondAttribute="top" id="cTs-8W-FPz"/>
+                            <constraint firstItem="9i9-oN-aHh" firstAttribute="centerX" secondItem="rhs-bc-x7G" secondAttribute="centerX" id="hId-8l-0uY"/>
+                            <constraint firstAttribute="trailing" secondItem="2UN-hy-Wmf" secondAttribute="trailing" id="kAc-CN-IOy"/>
+                            <constraint firstAttribute="bottom" secondItem="9i9-oN-aHh" secondAttribute="bottom" id="o3y-iG-xk2"/>
+                            <constraint firstItem="5WW-q1-QGT" firstAttribute="centerX" secondItem="rhs-bc-x7G" secondAttribute="centerX" id="pOq-Vr-2hv"/>
+                            <constraint firstAttribute="trailing" secondItem="9i9-oN-aHh" secondAttribute="trailing" id="tOX-zf-Df5"/>
+                            <constraint firstItem="9i9-oN-aHh" firstAttribute="leading" secondItem="rhs-bc-x7G" secondAttribute="leading" id="zuP-1F-g0b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gGD-7o-YCJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="o80-Rr-cen"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tHD-ZP-j8b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2375" y="138"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bOi-vY-4dp">
+            <objects>
+                <viewController id="TVO-s2-mA2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QmS-WS-lhh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Help2" translatesAutoresizingMaskIntoConstraints="NO" id="JkA-q8-QH0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoX-f3-0A8">
+                                <rect key="frame" x="117.66666666666669" y="828" width="179" height="34"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsT-b6-K7z">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="M0W-tW-no3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JkA-q8-QH0" firstAttribute="centerY" secondItem="QmS-WS-lhh" secondAttribute="centerY" id="1pa-za-YvU"/>
+                            <constraint firstAttribute="trailing" secondItem="xsT-b6-K7z" secondAttribute="trailing" id="8kY-Nr-h8f"/>
+                            <constraint firstItem="yoX-f3-0A8" firstAttribute="bottom" secondItem="cDb-TL-ZZN" secondAttribute="bottom" id="9VW-wJ-eOI"/>
+                            <constraint firstItem="yoX-f3-0A8" firstAttribute="centerX" secondItem="QmS-WS-lhh" secondAttribute="centerX" id="AHK-9G-bD3"/>
+                            <constraint firstItem="xsT-b6-K7z" firstAttribute="centerX" secondItem="QmS-WS-lhh" secondAttribute="centerX" id="AxE-o9-QFo"/>
+                            <constraint firstAttribute="bottom" secondItem="xsT-b6-K7z" secondAttribute="bottom" id="LAO-Jo-96M"/>
+                            <constraint firstItem="xsT-b6-K7z" firstAttribute="leading" secondItem="QmS-WS-lhh" secondAttribute="leading" id="Mmt-Q4-EYu"/>
+                            <constraint firstItem="xsT-b6-K7z" firstAttribute="top" secondItem="QmS-WS-lhh" secondAttribute="top" id="Njo-5f-ALE"/>
+                            <constraint firstItem="xsT-b6-K7z" firstAttribute="centerY" secondItem="QmS-WS-lhh" secondAttribute="centerY" id="YRZ-ve-MQC"/>
+                            <constraint firstItem="JkA-q8-QH0" firstAttribute="centerX" secondItem="QmS-WS-lhh" secondAttribute="centerX" id="bgk-hV-qVx"/>
+                            <constraint firstAttribute="trailing" secondItem="JkA-q8-QH0" secondAttribute="trailing" id="ia8-6W-LqJ"/>
+                            <constraint firstItem="JkA-q8-QH0" firstAttribute="leading" secondItem="QmS-WS-lhh" secondAttribute="leading" id="t5H-cN-eFJ"/>
+                            <constraint firstItem="JkA-q8-QH0" firstAttribute="top" secondItem="QmS-WS-lhh" secondAttribute="top" id="zHD-0h-2FA"/>
+                            <constraint firstAttribute="bottom" secondItem="JkA-q8-QH0" secondAttribute="bottom" id="zM6-6J-8WG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cDb-TL-ZZN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a3d-tV-yhC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3559" y="138"/>
         </scene>
         <!--RuleOfSymmetry-->
         <scene sceneID="n0R-UV-MvU">
@@ -247,6 +361,8 @@
     </scenes>
     <resources>
         <image name="FlashOff" width="28" height="28"/>
+        <image name="Help1" width="828" height="1792"/>
+        <image name="Help2" width="828" height="1792"/>
         <image name="Info" width="28" height="28"/>
         <image name="Ratio" width="28" height="28"/>
         <image name="Rotate" width="38" height="29"/>
