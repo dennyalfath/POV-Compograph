@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -29,30 +29,6 @@
                                 <rect key="frame" x="0.0" y="78" width="414" height="739"/>
                                 <gestureRecognizers/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73g-li-vbU">
-                                <rect key="frame" x="25" y="44" width="28" height="28"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="KDg-Ya-ZwA"/>
-                                </constraints>
-                                <state key="normal" image="FlashOff"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRh-dE-1f6">
-                                <rect key="frame" x="57" y="46" width="24" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="24" id="SaV-sl-vcN"/>
-                                </constraints>
-                                <state key="normal" image="no grid"/>
-                                <connections>
-                                    <action selector="ShowGridButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hcy-As-ajz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnW-WT-4z0">
-                                <rect key="frame" x="89" y="44" width="28" height="28"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="ile-W0-dMp"/>
-                                </constraints>
-                                <state key="normal" image="Ratio"/>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YYJ-cs-Rp9">
                                 <rect key="frame" x="0.0" y="648" width="414" height="169"/>
                                 <subviews>
@@ -83,23 +59,23 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1oe-Sz-201">
-                                        <rect key="frame" x="27" y="71" width="53" height="49"/>
+                                        <rect key="frame" x="30" y="76" width="42" height="41"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="49" id="CqO-zv-A98"/>
-                                            <constraint firstAttribute="width" constant="53" id="F2n-FZ-slz"/>
+                                            <constraint firstAttribute="height" constant="41" id="CqO-zv-A98"/>
+                                            <constraint firstAttribute="width" constant="42" id="F2n-FZ-slz"/>
                                         </constraints>
-                                        <state key="normal" image="photo" catalog="system"/>
+                                        <state key="normal" image="PhotoLibrary"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.25420055650684931" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="ie6-7C-0bA" firstAttribute="centerX" secondItem="YYJ-cs-Rp9" secondAttribute="centerX" id="1lO-Ql-Ssn"/>
                                     <constraint firstItem="ie6-7C-0bA" firstAttribute="top" secondItem="YYJ-cs-Rp9" secondAttribute="top" constant="60" id="2r3-ci-2cR"/>
-                                    <constraint firstItem="1oe-Sz-201" firstAttribute="top" secondItem="YYJ-cs-Rp9" secondAttribute="top" constant="71" id="3bG-2d-Zzj"/>
+                                    <constraint firstItem="1oe-Sz-201" firstAttribute="top" secondItem="YYJ-cs-Rp9" secondAttribute="top" constant="76" id="3bG-2d-Zzj"/>
                                     <constraint firstItem="66p-Hd-HkT" firstAttribute="top" secondItem="YYJ-cs-Rp9" secondAttribute="top" constant="71" id="Je2-km-scx"/>
                                     <constraint firstAttribute="height" constant="169" id="UU3-6o-TOC"/>
                                     <constraint firstAttribute="trailing" secondItem="66p-Hd-HkT" secondAttribute="trailing" constant="19" id="cWe-ss-zAC"/>
-                                    <constraint firstItem="1oe-Sz-201" firstAttribute="leading" secondItem="YYJ-cs-Rp9" secondAttribute="leading" constant="27" id="ruo-i8-Q31"/>
+                                    <constraint firstItem="1oe-Sz-201" firstAttribute="leading" secondItem="YYJ-cs-Rp9" secondAttribute="leading" constant="30" id="ruo-i8-Q31"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7T-Ej-cFV">
@@ -126,42 +102,42 @@
                                     <segue destination="fh2-Me-rAV" kind="modal" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="eI9-3I-yrZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRh-dE-1f6">
+                                <rect key="frame" x="20" y="46" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="hkn-cQ-rib"/>
+                                </constraints>
+                                <state key="normal" image="no grid"/>
+                                <connections>
+                                    <action selector="ShowGridButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hcy-As-ajz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="rRh-dE-1f6" firstAttribute="leading" secondItem="73g-li-vbU" secondAttribute="trailing" constant="4" id="1Dv-mh-4EP"/>
-                            <constraint firstItem="RhS-Yz-86X" firstAttribute="top" secondItem="73g-li-vbU" secondAttribute="bottom" constant="6" id="5D8-Sy-fvj"/>
-                            <constraint firstItem="gLQ-ps-KlM" firstAttribute="top" secondItem="gnW-WT-4z0" secondAttribute="bottom" constant="6" id="5jS-FD-lfx"/>
                             <constraint firstItem="gLQ-ps-KlM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6BC-zP-Je4"/>
                             <constraint firstItem="gLQ-ps-KlM" firstAttribute="top" secondItem="J7T-Ej-cFV" secondAttribute="bottom" constant="8" id="9JJ-di-bYk"/>
                             <constraint firstItem="RhS-Yz-86X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Amd-fi-xEr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J7T-Ej-cFV" secondAttribute="trailing" constant="20" id="C9G-y3-DrD"/>
                             <constraint firstAttribute="trailing" secondItem="RhS-Yz-86X" secondAttribute="trailing" id="D4S-s6-jNK"/>
-                            <constraint firstItem="RhS-Yz-86X" firstAttribute="top" secondItem="gnW-WT-4z0" secondAttribute="bottom" constant="6" id="HXA-qH-K1s"/>
                             <constraint firstAttribute="trailing" secondItem="YYJ-cs-Rp9" secondAttribute="trailing" id="LgP-Pw-RlW"/>
-                            <constraint firstItem="73g-li-vbU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="Mck-j0-qWO"/>
                             <constraint firstAttribute="trailing" secondItem="cup-VV-alR" secondAttribute="trailing" id="MiI-41-JxO"/>
-                            <constraint firstItem="gnW-WT-4z0" firstAttribute="leading" secondItem="rRh-dE-1f6" secondAttribute="trailing" constant="8" id="NK9-0P-iXd"/>
-                            <constraint firstItem="gLQ-ps-KlM" firstAttribute="top" secondItem="73g-li-vbU" secondAttribute="bottom" constant="6" id="NMq-s2-fei"/>
                             <constraint firstItem="gLQ-ps-KlM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NXd-eT-e1P"/>
                             <constraint firstAttribute="trailing" secondItem="gLQ-ps-KlM" secondAttribute="trailing" id="NYg-I7-8K8"/>
                             <constraint firstItem="YYJ-cs-Rp9" firstAttribute="top" secondItem="gLQ-ps-KlM" secondAttribute="bottom" id="Nrw-84-AvH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YYJ-cs-Rp9" secondAttribute="bottom" constant="45" id="Pe2-gG-WHu"/>
-                            <constraint firstItem="rRh-dE-1f6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="2" id="R7p-MQ-xS6"/>
                             <constraint firstItem="gLQ-ps-KlM" firstAttribute="top" secondItem="wzZ-vk-pUz" secondAttribute="bottom" constant="8" id="TPU-Re-UVX"/>
-                            <constraint firstItem="RhS-Yz-86X" firstAttribute="top" secondItem="rRh-dE-1f6" secondAttribute="bottom" constant="8" id="USs-OH-F0q"/>
                             <constraint firstItem="cup-VV-alR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="UiL-CQ-8Ec"/>
                             <constraint firstItem="RhS-Yz-86X" firstAttribute="top" secondItem="wzZ-vk-pUz" secondAttribute="bottom" constant="8" id="Vjd-ki-AcT"/>
+                            <constraint firstItem="rRh-dE-1f6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="2" id="Xe2-ZZ-GV6"/>
                             <constraint firstItem="J7T-Ej-cFV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZIB-LA-cEq"/>
                             <constraint firstItem="J7T-Ej-cFV" firstAttribute="leading" secondItem="wzZ-vk-pUz" secondAttribute="trailing" constant="10" id="ZmX-m2-3EI"/>
                             <constraint firstItem="RhS-Yz-86X" firstAttribute="top" secondItem="J7T-Ej-cFV" secondAttribute="bottom" constant="8" id="bOE-Z9-pED"/>
                             <constraint firstItem="YYJ-cs-Rp9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cXQ-4v-szw"/>
-                            <constraint firstItem="gLQ-ps-KlM" firstAttribute="top" secondItem="rRh-dE-1f6" secondAttribute="bottom" constant="8" id="dyZ-c7-Bvb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RhS-Yz-86X" secondAttribute="bottom" constant="45" id="hcL-bK-kWW"/>
                             <constraint firstAttribute="bottom" secondItem="cup-VV-alR" secondAttribute="bottom" id="kP0-Q1-stu"/>
-                            <constraint firstItem="73g-li-vbU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pjY-1c-UGy"/>
-                            <constraint firstItem="gnW-WT-4z0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rwx-87-5BP"/>
+                            <constraint firstItem="rRh-dE-1f6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="puV-Q7-ira"/>
                             <constraint firstItem="cup-VV-alR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yg8-bR-HbC"/>
                             <constraint firstItem="YYJ-cs-Rp9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="z8W-qT-FOc"/>
                             <constraint firstItem="RhS-Yz-86X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zIC-RP-wPj"/>
@@ -360,15 +336,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="FlashOff" width="28" height="28"/>
         <image name="Help1" width="828" height="1792"/>
         <image name="Help2" width="828" height="1792"/>
         <image name="Info" width="28" height="28"/>
-        <image name="Ratio" width="28" height="28"/>
+        <image name="PhotoLibrary" width="677" height="677"/>
         <image name="Rotate" width="38" height="29"/>
         <image name="Rule of Third" width="414" height="558"/>
         <image name="Shutter" width="72" height="72"/>
         <image name="no grid" width="24" height="24"/>
-        <image name="photo" catalog="system" width="128" height="93"/>
     </resources>
 </document>
