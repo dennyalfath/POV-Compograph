@@ -90,10 +90,6 @@
                                     <constraint firstAttribute="height" constant="169" id="UU3-6o-TOC"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUh-16-rt8">
-                                <rect key="frame" x="189" y="575" width="37" height="37"/>
-                                <state key="normal" image="Zoom1x"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7T-Ej-cFV">
                                 <rect key="frame" x="366" y="44" width="28" height="26"/>
                                 <constraints>
@@ -111,14 +107,11 @@
                             <constraint firstItem="rRh-dE-1f6" firstAttribute="leading" secondItem="73g-li-vbU" secondAttribute="trailing" constant="4" id="1Dv-mh-4EP"/>
                             <constraint firstItem="YYJ-cs-Rp9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6Ie-tK-k1N"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J7T-Ej-cFV" secondAttribute="trailing" constant="20" id="C9G-y3-DrD"/>
-                            <constraint firstItem="MUh-16-rt8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="189" id="JX2-BP-HdJ"/>
                             <constraint firstItem="73g-li-vbU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="Mck-j0-qWO"/>
                             <constraint firstItem="gnW-WT-4z0" firstAttribute="leading" secondItem="rRh-dE-1f6" secondAttribute="trailing" constant="8" id="NK9-0P-iXd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YYJ-cs-Rp9" secondAttribute="bottom" constant="45" id="Pe2-gG-WHu"/>
-                            <constraint firstItem="YYJ-cs-Rp9" firstAttribute="top" secondItem="MUh-16-rt8" secondAttribute="bottom" constant="36" id="R2b-LD-GBZ"/>
                             <constraint firstItem="rRh-dE-1f6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="2" id="R7p-MQ-xS6"/>
                             <constraint firstItem="J7T-Ej-cFV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZIB-LA-cEq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MUh-16-rt8" secondAttribute="trailing" constant="188" id="nAs-vo-f3X"/>
                             <constraint firstItem="73g-li-vbU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pjY-1c-UGy"/>
                             <constraint firstItem="gnW-WT-4z0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rwx-87-5BP"/>
                             <constraint firstItem="YYJ-cs-Rp9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="z8W-qT-FOc"/>
@@ -226,7 +219,6 @@
         <image name="Rotate" width="38" height="29"/>
         <image name="Rule of Third" width="414" height="558"/>
         <image name="Shutter" width="72" height="72"/>
-        <image name="Zoom1x" width="37" height="37"/>
         <image name="no grid" width="24" height="24"/>
         <image name="photo" catalog="system" width="128" height="93"/>
     </resources>
