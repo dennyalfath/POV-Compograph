@@ -32,6 +32,7 @@ extension ViewController {
         FSColorCode = 0
         DRColorCode = 0
         TPGColorCode = 0
+        RoSColorCode = 0
     }
     
 //MARK: - TURN GRID ON/OFF BY TAPPING GRID ACTION BUTTON
@@ -128,14 +129,14 @@ extension ViewController {
     // change grid mode by swipe
     func ifSwipedRight() {
         gridColorReset()
-        if SwipeCode < 4 {
+        if SwipeCode < 5 {
             SwipeCode += 1
             gridPicker.selectRow(SwipeCode, inComponent: 0, animated: true)
             gridInUsed.image = UIImage(named: gridType[SwipeCode])
             GridCode = (gridType[SwipeCode])
         }
         
-        else if SwipeCode == 4 {
+        else if SwipeCode == 5 {
             SwipeCode = 0
             gridPicker.selectRow(SwipeCode, inComponent: 0, animated: true)
             gridInUsed.image = UIImage(named: gridType[SwipeCode])
@@ -154,7 +155,7 @@ extension ViewController {
            }
            
            else if SwipeCode == 0 {
-               SwipeCode = 4
+               SwipeCode = 5
                gridPicker.selectRow(SwipeCode, inComponent: 0, animated: true)
                gridInUsed.image = UIImage(named: gridType[SwipeCode])
                GridCode = (gridType[SwipeCode])
@@ -227,6 +228,18 @@ extension ViewController {
                     return
                 }
             }
+            else if GridCode == "Rule of Symmetry"{
+                if  RoSColorCode >= 5 {
+                    RoSColorCode = 0
+                    gridInUsed.image = UIImage(named: "Rule of Symmetry")
+                    return
+                }
+                else {
+                    RoSColorCode += 1
+                    gridInUsed.image = UIImage(named: "Rule of Symmetry-\(RoSColorCode)")
+                    return
+                }
+            }
         }
     }
     
@@ -248,6 +261,9 @@ extension ViewController {
         }
         else if GridCode == "The Phi Grid" && gridMode == true {
             self.performSegue(withIdentifier: "TPG", sender: self)
+        }
+        else if GridCode == "Rule of Symmetry" && gridMode == true {
+            self.performSegue(withIdentifier: "RoS", sender: self)
         }
     }
 }
