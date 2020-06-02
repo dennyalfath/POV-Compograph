@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rule of Third-->
+        <scene sceneID="mmn-U4-Fif">
+            <objects>
+                <viewController storyboardIdentifier="RuleOfThird" id="aS3-H9-ajl" userLabel="Rule of Third" customClass="RuleOfThirdVC" customModule="POV_CameraApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RRt-NY-DvU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rot3" translatesAutoresizingMaskIntoConstraints="NO" id="cg3-Jo-gJd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="215" id="Ksg-rP-Wia"/>
+                                </constraints>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c37-WB-uX7" userLabel="Definition Container View">
+                                <rect key="frame" x="0.0" y="286" width="414" height="610"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="610" id="bmz-aB-NR5"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="8ow-5l-GeF" kind="embed" id="5LJ-6F-hkx"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yuC-0X-5jY" userLabel="How Container View">
+                                <rect key="frame" x="0.0" y="286" width="414" height="604"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="604" id="3aE-Jd-SuT"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="HDg-T5-lOZ" kind="embed" id="NlM-wM-bX0"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EOi-N9-nth" userLabel="Example Container View">
+                                <rect key="frame" x="0.0" y="286" width="414" height="604"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="604" id="VYR-YX-qt0"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="jKR-bR-Beo" kind="embed" id="CRd-Nk-waa"/>
+                                </connections>
+                            </containerView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="K0n-5k-VHB">
+                                <rect key="frame" x="20" y="235" width="374" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="mk8-NT-oX7"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Definition"/>
+                                    <segment title="How"/>
+                                    <segment title="Example"/>
+                                </segments>
+                                <connections>
+                                    <action selector="didTapSegment:" destination="aS3-H9-ajl" eventType="valueChanged" id="Thr-W6-63O"/>
+                                </connections>
+                            </segmentedControl>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Rule of Third" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bAB-uw-Z15">
+                                <rect key="frame" x="120" y="10" width="174" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="c7U-L4-F6k"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bAB-uw-Z15" firstAttribute="top" secondItem="RRt-NY-DvU" secondAttribute="top" constant="10" id="02l-uS-vg9"/>
+                            <constraint firstItem="g8N-sg-3eG" firstAttribute="trailing" secondItem="bAB-uw-Z15" secondAttribute="trailing" constant="120" id="0rm-PC-QGo"/>
+                            <constraint firstItem="bAB-uw-Z15" firstAttribute="leading" secondItem="g8N-sg-3eG" secondAttribute="leading" constant="120" id="2cM-Z5-hu3"/>
+                            <constraint firstItem="cg3-Jo-gJd" firstAttribute="trailing" secondItem="g8N-sg-3eG" secondAttribute="trailing" id="5km-db-qNV"/>
+                            <constraint firstItem="c37-WB-uX7" firstAttribute="top" secondItem="K0n-5k-VHB" secondAttribute="bottom" constant="20" id="6Ov-cu-DAC"/>
+                            <constraint firstItem="cg3-Jo-gJd" firstAttribute="top" secondItem="RRt-NY-DvU" secondAttribute="top" id="7Xd-Q6-XiC"/>
+                            <constraint firstItem="c37-WB-uX7" firstAttribute="trailing" secondItem="g8N-sg-3eG" secondAttribute="trailing" id="JvB-Cd-osy"/>
+                            <constraint firstItem="EOi-N9-nth" firstAttribute="top" secondItem="K0n-5k-VHB" secondAttribute="bottom" constant="20" id="Lxf-AC-rvp"/>
+                            <constraint firstItem="K0n-5k-VHB" firstAttribute="leading" secondItem="g8N-sg-3eG" secondAttribute="leading" constant="20" id="XLj-zq-dpM"/>
+                            <constraint firstItem="cg3-Jo-gJd" firstAttribute="leading" secondItem="g8N-sg-3eG" secondAttribute="leading" id="Zhq-IS-KtI"/>
+                            <constraint firstItem="yuC-0X-5jY" firstAttribute="trailing" secondItem="g8N-sg-3eG" secondAttribute="trailing" id="aZh-uB-ucQ"/>
+                            <constraint firstItem="c37-WB-uX7" firstAttribute="leading" secondItem="g8N-sg-3eG" secondAttribute="leading" id="d96-8v-dq1"/>
+                            <constraint firstItem="K0n-5k-VHB" firstAttribute="top" secondItem="cg3-Jo-gJd" secondAttribute="bottom" constant="20" id="dlj-pt-wW4"/>
+                            <constraint firstItem="g8N-sg-3eG" firstAttribute="trailing" secondItem="K0n-5k-VHB" secondAttribute="trailing" constant="20" id="eGM-GN-c78"/>
+                            <constraint firstItem="yuC-0X-5jY" firstAttribute="leading" secondItem="g8N-sg-3eG" secondAttribute="leading" id="pze-I5-jOX"/>
+                            <constraint firstItem="EOi-N9-nth" firstAttribute="leading" secondItem="g8N-sg-3eG" secondAttribute="leading" id="q2o-tg-cg6"/>
+                            <constraint firstItem="yuC-0X-5jY" firstAttribute="top" secondItem="K0n-5k-VHB" secondAttribute="bottom" constant="20" id="y4l-ai-T1Z"/>
+                            <constraint firstItem="EOi-N9-nth" firstAttribute="trailing" secondItem="g8N-sg-3eG" secondAttribute="trailing" id="yqo-0B-WjT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g8N-sg-3eG"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Golden Triangle" id="QKF-ek-u06"/>
+                    <connections>
+                        <outlet property="defVC" destination="c37-WB-uX7" id="edV-l5-0Lh"/>
+                        <outlet property="exampleVC" destination="EOi-N9-nth" id="JIX-Dd-yBz"/>
+                        <outlet property="howVC" destination="yuC-0X-5jY" id="RZ2-I1-eY1"/>
+                        <outlet property="segmentedControl" destination="K0n-5k-VHB" id="g0Q-2F-Zuv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KYE-cF-HjQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1181.1594202898552" y="171.42857142857142"/>
+        </scene>
+        <!--Definition View Controller-->
+        <scene sceneID="RqX-Tl-Jez">
+            <objects>
+                <viewController id="8ow-5l-GeF" userLabel="Definition View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oU8-Ug-yPR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="610"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="laJ-ea-DDf">
+                                <rect key="frame" x="20" y="0.0" width="374" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">The rule of thirds involves dividing up your image using 2 horizontal lines and 2 vertical lines, as shown below. You then position the important elements in your scene along those lines, or at the points where they meet.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RotOV" translatesAutoresizingMaskIntoConstraints="NO" id="fge-mT-U1B">
+                                <rect key="frame" x="20" y="122" width="374" height="212"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="at8-4o-X4G">
+                                <rect key="frame" x="20" y="355" width="374" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">The idea is that an off-centre composition is more pleasing to the eye and looks more natural than one where the subject is placed right in the middle of the frame. It also encourages you to make creative use of negative space, the empty areas around your subject.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="LU4-kR-4fA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LZx-48-OlF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1885.5072463768117" y="879.91071428571422"/>
+        </scene>
+        <!--How View Controller-->
+        <scene sceneID="12z-oO-Zpa">
+            <objects>
+                <viewController id="HDg-T5-lOZ" userLabel="How View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5RI-Zj-PP4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="604"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="n0i-gu-for">
+                                <rect key="frame" x="20" y="0.0" width="374" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">1. Think about what elements of the photo are most important, and try to position them at or near the lines and intersections of the grid. They don't have to be perfectly lined up as long as they're close.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rot1" translatesAutoresizingMaskIntoConstraints="NO" id="O18-ZN-cUg">
+                                <rect key="frame" x="20" y="96" width="374" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YSD-52-Kxe">
+                                <rect key="frame" x="20" y="283" width="374" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">2. Move around to get the best composition
+</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rot2" translatesAutoresizingMaskIntoConstraints="NO" id="3Kk-Lu-sqP">
+                                <rect key="frame" x="20" y="326" width="374" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="m06-2K-xxw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tLn-pF-JOU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="465" y="878"/>
+        </scene>
+        <!--Example View Controller-->
+        <scene sceneID="sBH-ZQ-esl">
+            <objects>
+                <viewController id="jKR-bR-Beo" userLabel="Example View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6EZ-zv-MJr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="604"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rot3" translatesAutoresizingMaskIntoConstraints="NO" id="3gC-sw-qtr">
+                                <rect key="frame" x="20" y="17" width="175" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rot4" translatesAutoresizingMaskIntoConstraints="NO" id="lI8-T7-CLt">
+                                <rect key="frame" x="219" y="17" width="175" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rot5" translatesAutoresizingMaskIntoConstraints="NO" id="NPW-Za-ENl">
+                                <rect key="frame" x="20" y="146" width="175" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rot6" translatesAutoresizingMaskIntoConstraints="NO" id="nkE-2O-KsA">
+                                <rect key="frame" x="219" y="146" width="175" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rot7" translatesAutoresizingMaskIntoConstraints="NO" id="v66-cJ-MGS">
+                                <rect key="frame" x="20" y="275" width="175" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rot8" translatesAutoresizingMaskIntoConstraints="NO" id="1d3-s0-dMu">
+                                <rect key="frame" x="219" y="275" width="175" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Wgf-a3-h9M"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hUR-Ii-Eng" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1183" y="882"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Rot1" width="690" height="460"/>
+        <image name="Rot2" width="660" height="420"/>
+        <image name="Rot3" width="768" height="504"/>
+        <image name="Rot4" width="800" height="533"/>
+        <image name="Rot5" width="1920" height="1080"/>
+        <image name="Rot6" width="620" height="446"/>
+        <image name="Rot7" width="750" height="500"/>
+        <image name="Rot8" width="624" height="390"/>
+        <image name="RotOV" width="639" height="424"/>
+    </resources>
+</document>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="POV_CameraApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLQ-ps-KlM">
+                                <rect key="frame" x="0.0" y="126" width="414" height="572"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="GridColorButtonChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z9O-mt-qvj"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cup-VV-alR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rule of Third" translatesAutoresizingMaskIntoConstraints="NO" id="RhS-Yz-86X">
+                                <rect key="frame" x="0.0" y="78" width="414" height="739"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73g-li-vbU">
+                                <rect key="frame" x="25" y="44" width="28" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="KDg-Ya-ZwA"/>
+                                </constraints>
+                                <state key="normal" image="FlashOff"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRh-dE-1f6">
+                                <rect key="frame" x="57" y="46" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="SaV-sl-vcN"/>
+                                </constraints>
+                                <state key="normal" image="no grid"/>
+                                <connections>
+                                    <action selector="ShowGridButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hcy-As-ajz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnW-WT-4z0">
+                                <rect key="frame" x="89" y="44" width="28" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="ile-W0-dMp"/>
+                                </constraints>
+                                <state key="normal" image="Ratio"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YYJ-cs-Rp9">
+                                <rect key="frame" x="0.0" y="648" width="414" height="169"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Ht-cB-fbE">
+                                        <rect key="frame" x="-0.91253994068711108" y="5" width="413.99999999999983" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </pickerView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ie6-7C-0bA">
+                                        <rect key="frame" x="171" y="60" width="72" height="72"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Shutter"/>
+                                        <connections>
+                                            <action selector="imageCapture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SqA-xr-1BT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66p-Hd-HkT">
+                                        <rect key="frame" x="330" y="71" width="65" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Rotate"/>
+                                        <connections>
+                                            <action selector="rotateCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="olf-DY-FSu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1oe-Sz-201">
+                                        <rect key="frame" x="27" y="71" width="53" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="photo" catalog="system"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.25420055650684931" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="169" id="UU3-6o-TOC"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUh-16-rt8">
+                                <rect key="frame" x="189" y="575" width="37" height="37"/>
+                                <state key="normal" image="Zoom1x"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7T-Ej-cFV">
+                                <rect key="frame" x="366" y="44" width="28" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="iA4-qD-V47"/>
+                                </constraints>
+                                <state key="normal" image="Info"/>
+                                <connections>
+                                    <action selector="gridInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="knH-Nh-tm9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="rRh-dE-1f6" firstAttribute="leading" secondItem="73g-li-vbU" secondAttribute="trailing" constant="4" id="1Dv-mh-4EP"/>
+                            <constraint firstItem="YYJ-cs-Rp9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6Ie-tK-k1N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J7T-Ej-cFV" secondAttribute="trailing" constant="20" id="C9G-y3-DrD"/>
+                            <constraint firstItem="MUh-16-rt8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="189" id="JX2-BP-HdJ"/>
+                            <constraint firstItem="73g-li-vbU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="Mck-j0-qWO"/>
+                            <constraint firstItem="gnW-WT-4z0" firstAttribute="leading" secondItem="rRh-dE-1f6" secondAttribute="trailing" constant="8" id="NK9-0P-iXd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YYJ-cs-Rp9" secondAttribute="bottom" constant="45" id="Pe2-gG-WHu"/>
+                            <constraint firstItem="YYJ-cs-Rp9" firstAttribute="top" secondItem="MUh-16-rt8" secondAttribute="bottom" constant="36" id="R2b-LD-GBZ"/>
+                            <constraint firstItem="rRh-dE-1f6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="2" id="R7p-MQ-xS6"/>
+                            <constraint firstItem="J7T-Ej-cFV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZIB-LA-cEq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MUh-16-rt8" secondAttribute="trailing" constant="188" id="nAs-vo-f3X"/>
+                            <constraint firstItem="73g-li-vbU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pjY-1c-UGy"/>
+                            <constraint firstItem="gnW-WT-4z0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rwx-87-5BP"/>
+                            <constraint firstItem="YYJ-cs-Rp9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="z8W-qT-FOc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="V79-gf-az2" appends="YES" id="3Z8-GE-ORb"/>
+                            <outletCollection property="gestureRecognizers" destination="F4u-JN-oc1" appends="YES" id="1Ga-fc-qGx"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="ShowGridButton" destination="rRh-dE-1f6" id="gWq-W3-kcv"/>
+                        <outlet property="bottomView" destination="YYJ-cs-Rp9" id="W6o-gE-WMB"/>
+                        <outlet property="cameraButton" destination="ie6-7C-0bA" id="Ivd-b5-h0g"/>
+                        <outlet property="cameraView" destination="cup-VV-alR" id="aFO-ng-aYh"/>
+                        <outlet property="gridInUsed" destination="RhS-Yz-86X" id="Lqg-Y0-CaO"/>
+                        <outlet property="gridPicker" destination="3Ht-cB-fbE" id="t4H-Ll-oOL"/>
+                        <segue destination="VMz-rC-qDv" kind="show" identifier="DR" id="XKI-QZ-MBo"/>
+                        <segue destination="gB2-gm-cDb" kind="show" identifier="RoS" id="CNq-Yf-rXV"/>
+                        <segue destination="wEG-M0-2hZ" kind="show" identifier="TPG" id="dHR-L1-qr7"/>
+                        <segue destination="6Yg-aW-i1O" kind="show" identifier="RoT" id="QqB-R9-ClZ"/>
+                        <segue destination="Uey-H7-Uvb" kind="show" identifier="FS" id="mfd-lU-ae8"/>
+                        <segue destination="nOo-nA-rmU" kind="show" identifier="GT" id="0hh-ij-wx9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="V79-gf-az2">
+                    <connections>
+                        <action selector="SwipeGridModeChange:" destination="BYZ-38-t0r" id="U74-X2-oRS"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="F4u-JN-oc1">
+                    <connections>
+                        <action selector="UndoSwipeGridModeChange:" destination="BYZ-38-t0r" id="2EK-ha-vJd"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--RuleOfSymmetry-->
+        <scene sceneID="n0R-UV-MvU">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="RuleOfSymmetry" storyboardName="RuleOfSymmetry" id="gB2-gm-cDb" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="6dl-Ct-tTw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w79-wv-cE0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1177" y="563"/>
+        </scene>
+        <!--DiagonalRule-->
+        <scene sceneID="uH6-lB-YRm">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="DiagonalRule" storyboardName="DiagonalRule" referencedIdentifier="DiagonalRule" id="VMz-rC-qDv" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="eir-RZ-wB7"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qik-Tx-k0x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-765" y="663"/>
+        </scene>
+        <!--ThePhiGrid-->
+        <scene sceneID="Tr1-Fc-Jy7">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ThePhiGrid" storyboardName="ThePhiGrid" referencedIdentifier="ThePhiGrid" id="wEG-M0-2hZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3b9-AH-ZD4"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Spd-fd-PfE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-91" y="727"/>
+        </scene>
+        <!--RuleOfThird-->
+        <scene sceneID="bF8-wC-RZ9">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="RuleOfThird" storyboardName="RuleOfThird" referencedIdentifier="RuleOfThird" id="6Yg-aW-i1O" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cia-2b-Cgo"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JPS-Qg-gwX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="363" y="727"/>
+        </scene>
+        <!--Fibonacci Spiral-->
+        <scene sceneID="QH8-WR-pYZ">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Fibonacci Spiral" storyboardName="Fibonacci Spiral" referencedIdentifier="Fibonacci Spiral" id="Uey-H7-Uvb" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="YJO-7m-4KU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5tg-Ls-4zo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1024" y="663"/>
+        </scene>
+        <!--GoldenTriangle-->
+        <scene sceneID="Kqh-bT-XuN">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="GoldenTriangle" storyboardName="GoldenTriangle" referencedIdentifier="GoldenTriangle" id="nOo-nA-rmU" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="MhB-jA-LAb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NuE-Bx-0ek" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1466" y="563"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FlashOff" width="28" height="28"/>
+        <image name="Info" width="28" height="28"/>
+        <image name="Ratio" width="28" height="28"/>
+        <image name="Rotate" width="38" height="29"/>
+        <image name="Rule of Third" width="414" height="558"/>
+        <image name="Shutter" width="72" height="72"/>
+        <image name="Zoom1x" width="37" height="37"/>
+        <image name="no grid" width="24" height="24"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
+    </resources>
+</document>
