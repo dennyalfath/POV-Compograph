@@ -106,11 +106,12 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBAction func imageCapture(_ sender: Any)
     {
         guard let capturePhotoOutput = self.capturePhotoOutput else { return }
+        
         let photoSettings = AVCapturePhotoSettings()
         photoSettings.isAutoStillImageStabilizationEnabled = true
         photoSettings.isHighResolutionPhotoEnabled = true
-        capturePhotoOutput.capturePhoto(with: photoSettings, delegate: self)
         
+        capturePhotoOutput.capturePhoto(with: photoSettings, delegate: self)
     }
     
     func switchToFrontCamera() {
