@@ -29,6 +29,10 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         return true
     }
     
+    override var shouldAutorotate: Bool {
+        return false
+    }
+    
     //Variable for Grid
     var gridCondition: Int = 1                                                // Represent Grid On or Off
     var gridMode: Bool = false                                                // If Grid Condition on means edit the grid is true
@@ -57,7 +61,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
                 captureSession.addInput(input)
                 captureSession.sessionPreset = .hd1920x1080
                 previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-                previewLayer.frame = view.frame
+                previewLayer.frame = view.bounds
                 previewLayer.videoGravity = .resizeAspect
                 cameraView.layer.addSublayer(previewLayer)
                 captureSession.startRunning()
@@ -124,7 +128,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
                 captureSession.addInput(input)
                 captureSession.sessionPreset = .hd1920x1080
                 previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-                previewLayer.frame = view.frame
+                previewLayer.frame = view.bounds
                 previewLayer.videoGravity = .resizeAspect
                 cameraView.layer.addSublayer(previewLayer)
                 captureSession.startRunning()
@@ -147,7 +151,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
                 captureSession.addInput(input)
                 captureSession.sessionPreset = .hd1920x1080
                 previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-                previewLayer.frame = view.frame
+                previewLayer.frame = view.bounds
                 previewLayer.videoGravity = .resizeAspect
                 cameraView.layer.addSublayer(previewLayer)
                 captureSession.startRunning()

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -121,6 +121,7 @@
                             <constraint firstItem="RhS-Yz-86X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Amd-fi-xEr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J7T-Ej-cFV" secondAttribute="trailing" constant="20" id="C9G-y3-DrD"/>
                             <constraint firstAttribute="trailing" secondItem="RhS-Yz-86X" secondAttribute="trailing" id="D4S-s6-jNK"/>
+                            <constraint firstAttribute="bottom" secondItem="cup-VV-alR" secondAttribute="bottom" id="Jbp-cc-U64"/>
                             <constraint firstAttribute="trailing" secondItem="YYJ-cs-Rp9" secondAttribute="trailing" id="LgP-Pw-RlW"/>
                             <constraint firstAttribute="trailing" secondItem="cup-VV-alR" secondAttribute="trailing" id="MiI-41-JxO"/>
                             <constraint firstItem="gLQ-ps-KlM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NXd-eT-e1P"/>
@@ -130,12 +131,15 @@
                             <constraint firstItem="gLQ-ps-KlM" firstAttribute="top" secondItem="wzZ-vk-pUz" secondAttribute="bottom" constant="8" id="TPU-Re-UVX"/>
                             <constraint firstItem="cup-VV-alR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="UiL-CQ-8Ec"/>
                             <constraint firstItem="RhS-Yz-86X" firstAttribute="top" secondItem="wzZ-vk-pUz" secondAttribute="bottom" constant="8" id="Vjd-ki-AcT"/>
+                            <constraint firstItem="cup-VV-alR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WYr-04-GyV"/>
                             <constraint firstItem="rRh-dE-1f6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-7" id="Xe2-ZZ-GV6"/>
+                            <constraint firstItem="cup-VV-alR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Xu2-vJ-Tew"/>
                             <constraint firstItem="J7T-Ej-cFV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZIB-LA-cEq"/>
                             <constraint firstItem="J7T-Ej-cFV" firstAttribute="leading" secondItem="wzZ-vk-pUz" secondAttribute="trailing" constant="10" id="ZmX-m2-3EI"/>
                             <constraint firstItem="RhS-Yz-86X" firstAttribute="top" secondItem="J7T-Ej-cFV" secondAttribute="bottom" constant="8" id="bOE-Z9-pED"/>
                             <constraint firstItem="YYJ-cs-Rp9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cXQ-4v-szw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RhS-Yz-86X" secondAttribute="bottom" constant="45" id="hcL-bK-kWW"/>
+                            <constraint firstItem="cup-VV-alR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="k8r-r1-9B1"/>
                             <constraint firstAttribute="bottom" secondItem="cup-VV-alR" secondAttribute="bottom" id="kP0-Q1-stu"/>
                             <constraint firstItem="rRh-dE-1f6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="puV-Q7-ira"/>
                             <constraint firstItem="cup-VV-alR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yg8-bR-HbC"/>
@@ -190,7 +194,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap screen to continue..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WW-q1-QGT">
-                                <rect key="frame" x="132.33333333333337" y="846.33333333333337" width="149.66666666666663" height="15.666666666666629"/>
+                                <rect key="frame" x="132" y="846" width="150" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
