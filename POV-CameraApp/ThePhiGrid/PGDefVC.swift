@@ -15,7 +15,7 @@ class PGDefVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        txtDef.text = "What you can see when using the Phi Grid is in the spaces where gridlines intersect. These so-called “sweet spots” are places where the eye is naturally drawn in an image. Cropping or aligning an image so that key parts fall in these areas will create focus and harmony."
+        txtDef.text = NSLocalizedString("What you can see when using the Phi Grid is in the spaces where gridlines intersect. These so-called “sweet spots” are places where the eye is naturally drawn in an image. Cropping or aligning an image so that key parts fall in these areas will create focus and harmony.", comment: "")
     }
     
 

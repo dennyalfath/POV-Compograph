@@ -15,7 +15,7 @@ class DRHowVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        txtHow.text = "1. Try to tilt your camera  2. Look for leading lines that can help you with diagonal rule  3. Capture your photo from the bottom or top corner of the frame"
+        txtHow.text = NSLocalizedString("1. Try to tilt your camera. \n2. Look for leading lines that can help you with diagonal rule. \n3. Capture your photo from the bottom or top corner of the frame", comment: "")
     }
     
 

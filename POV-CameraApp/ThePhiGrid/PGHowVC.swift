@@ -15,7 +15,7 @@ class PGHowVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        txtHow.text = "Place the objects of interest near or at the intersections of any of the lines"
+        txtHow.text = NSLocalizedString("Place the objects of interest near or at the intersections of any of the lines", comment: "")
     }
     
 

@@ -23,7 +23,6 @@
 		244C999524684996009E5355 /* POV_CameraAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C999424684996009E5355 /* POV_CameraAppUITests.swift */; };
 		246E39EB247F588400A85109 /* ThePhiGridVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246E39EA247F588400A85109 /* ThePhiGridVC.swift */; };
 		246E39F0247F73B400A85109 /* DiagonalRuleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246E39EF247F73B400A85109 /* DiagonalRuleVC.swift */; };
-		246E39F3247F74B500A85109 /* RuleOfSymmetry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 246E39F2247F74B500A85109 /* RuleOfSymmetry.storyboard */; };
 		248857E2247E1C4600295B9C /* FibonacciSpiralVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248857E1247E1C4600295B9C /* FibonacciSpiralVC.swift */; };
 		248857E4247E1FF500295B9C /* FSDefinitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248857E3247E1FF500295B9C /* FSDefinitionVC.swift */; };
 		248857E6247E200800295B9C /* FSHowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248857E5247E200800295B9C /* FSHowVC.swift */; };
@@ -36,11 +35,13 @@
 		24B2A8FA24981434007E6EF6 /* DRDefVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B2A8F924981434007E6EF6 /* DRDefVC.swift */; };
 		24B2A8FC249815DD007E6EF6 /* PGDefVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B2A8FB249815DD007E6EF6 /* PGDefVC.swift */; };
 		24B2A8FE249816BE007E6EF6 /* PGHowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B2A8FD249816BE007E6EF6 /* PGHowVC.swift */; };
+		B3CBB0782498375D00324082 /* RuleOfSymmetry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3CBB07A2498375D00324082 /* RuleOfSymmetry.storyboard */; };
+		B3CBB07B2498376500324082 /* ThePhiGrid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3CBB07D2498376500324082 /* ThePhiGrid.storyboard */; };
+		B3CBB07E2498378D00324082 /* Fibonacci Spiral.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3CBB0802498378D00324082 /* Fibonacci Spiral.storyboard */; };
+		B3CBB08B249837E300324082 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3CBB08D249837E300324082 /* Localizable.strings */; };
 		F286598224852D17006F1522 /* GridUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F286598124852D17006F1522 /* GridUI.swift */; };
 		F2F91CFB24853E9A000BAEA4 /* DiagonalRule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F91CF924853E9A000BAEA4 /* DiagonalRule.storyboard */; };
-		F2F91CFD24854036000BAEA4 /* ThePhiGrid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F91CFC24854036000BAEA4 /* ThePhiGrid.storyboard */; };
 		F2F91D00248542B5000BAEA4 /* RuleOfThird.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F91CFE248542B5000BAEA4 /* RuleOfThird.storyboard */; };
-		F2F91D022485437F000BAEA4 /* Fibonacci Spiral.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F91D012485437F000BAEA4 /* Fibonacci Spiral.storyboard */; };
 		F2F91D0F248546DA000BAEA4 /* GoldenTriangle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F91D0D248546DA000BAEA4 /* GoldenTriangle.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -84,7 +85,6 @@
 		244C999624684996009E5355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		246E39EA247F588400A85109 /* ThePhiGridVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThePhiGridVC.swift; sourceTree = "<group>"; };
 		246E39EF247F73B400A85109 /* DiagonalRuleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagonalRuleVC.swift; sourceTree = "<group>"; };
-		246E39F2247F74B500A85109 /* RuleOfSymmetry.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RuleOfSymmetry.storyboard; sourceTree = "<group>"; };
 		248857E1247E1C4600295B9C /* FibonacciSpiralVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciSpiralVC.swift; sourceTree = "<group>"; };
 		248857E3247E1FF500295B9C /* FSDefinitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSDefinitionVC.swift; sourceTree = "<group>"; };
 		248857E5247E200800295B9C /* FSHowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSHowVC.swift; sourceTree = "<group>"; };
@@ -97,11 +97,22 @@
 		24B2A8F924981434007E6EF6 /* DRDefVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DRDefVC.swift; sourceTree = "<group>"; };
 		24B2A8FB249815DD007E6EF6 /* PGDefVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGDefVC.swift; sourceTree = "<group>"; };
 		24B2A8FD249816BE007E6EF6 /* PGHowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGHowVC.swift; sourceTree = "<group>"; };
+		B3CBB0792498375D00324082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/RuleOfSymmetry.storyboard; sourceTree = "<group>"; };
+		B3CBB07C2498376500324082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ThePhiGrid.storyboard; sourceTree = "<group>"; };
+		B3CBB07F2498378D00324082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Fibonacci Spiral.storyboard"; sourceTree = "<group>"; };
+		B3CBB081249837CC00324082 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/RuleOfSymmetry.strings; sourceTree = "<group>"; };
+		B3CBB082249837CC00324082 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = "POV-CameraApp/id.lproj/DiagonalRule.strings"; sourceTree = "<group>"; };
+		B3CBB083249837CC00324082 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/ThePhiGrid.strings; sourceTree = "<group>"; };
+		B3CBB084249837CC00324082 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = "POV-CameraApp/id.lproj/RuleOfThird.strings"; sourceTree = "<group>"; };
+		B3CBB085249837CC00324082 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = "id.lproj/Fibonacci Spiral.strings"; sourceTree = "<group>"; };
+		B3CBB086249837CC00324082 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = "POV-CameraApp/id.lproj/GoldenTriangle.strings"; sourceTree = "<group>"; };
+		B3CBB087249837CD00324082 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Main.strings; sourceTree = "<group>"; };
+		B3CBB088249837CD00324082 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		B3CBB08C249837E300324082 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B3CBB08E249837E400324082 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F286598124852D17006F1522 /* GridUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridUI.swift; sourceTree = "<group>"; };
 		F2F91CFA24853E9A000BAEA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "POV-CameraApp/Base.lproj/DiagonalRule.storyboard"; sourceTree = "<group>"; };
-		F2F91CFC24854036000BAEA4 /* ThePhiGrid.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ThePhiGrid.storyboard; sourceTree = "<group>"; };
 		F2F91CFF248542B5000BAEA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "POV-CameraApp/Base.lproj/RuleOfThird.storyboard"; sourceTree = "<group>"; };
-		F2F91D012485437F000BAEA4 /* Fibonacci Spiral.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Fibonacci Spiral.storyboard"; sourceTree = "<group>"; };
 		F2F91D0E248546DA000BAEA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "POV-CameraApp/Base.lproj/GoldenTriangle.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,6 +178,7 @@
 				244C997B24684996009E5355 /* Assets.xcassets */,
 				244C997D24684996009E5355 /* LaunchScreen.storyboard */,
 				244C998024684996009E5355 /* Info.plist */,
+				B3CBB08D249837E300324082 /* Localizable.strings */,
 			);
 			path = "POV-CameraApp";
 			sourceTree = "<group>";
@@ -192,7 +204,7 @@
 		246E39E7247F583500A85109 /* ThePhiGrid */ = {
 			isa = PBXGroup;
 			children = (
-				F2F91CFC24854036000BAEA4 /* ThePhiGrid.storyboard */,
+				B3CBB07D2498376500324082 /* ThePhiGrid.storyboard */,
 				246E39EA247F588400A85109 /* ThePhiGridVC.swift */,
 				24B2A8FB249815DD007E6EF6 /* PGDefVC.swift */,
 				24B2A8FD249816BE007E6EF6 /* PGHowVC.swift */,
@@ -214,7 +226,7 @@
 		246E39F1247F749C00A85109 /* RuleOfSymmetry */ = {
 			isa = PBXGroup;
 			children = (
-				246E39F2247F74B500A85109 /* RuleOfSymmetry.storyboard */,
+				B3CBB07A2498375D00324082 /* RuleOfSymmetry.storyboard */,
 				240EC59C247F76A90079F0E4 /* RuleOfSymmetryVC.swift */,
 				248F5D962497D9B1002D0E2C /* ROSDefinitionVC.swift */,
 				241653412498294700A4CBF5 /* ROSHowVC.swift */,
@@ -225,7 +237,7 @@
 		248857DE247E1A8F00295B9C /* FibonacciSpiral */ = {
 			isa = PBXGroup;
 			children = (
-				F2F91D012485437F000BAEA4 /* Fibonacci Spiral.storyboard */,
+				B3CBB0802498378D00324082 /* Fibonacci Spiral.storyboard */,
 				248857E1247E1C4600295B9C /* FibonacciSpiralVC.swift */,
 				248857E3247E1FF500295B9C /* FSDefinitionVC.swift */,
 				248857E5247E200800295B9C /* FSHowVC.swift */,
@@ -343,6 +355,7 @@
 			knownRegions = (
 				en,
 				Base,
+				id,
 			);
 			mainGroup = 244C996624684995009E5355;
 			productRefGroup = 244C997024684995009E5355 /* Products */;
@@ -361,14 +374,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2F91CFD24854036000BAEA4 /* ThePhiGrid.storyboard in Resources */,
+				B3CBB07B2498376500324082 /* ThePhiGrid.storyboard in Resources */,
 				F2F91D00248542B5000BAEA4 /* RuleOfThird.storyboard in Resources */,
 				244C997F24684996009E5355 /* LaunchScreen.storyboard in Resources */,
-				F2F91D022485437F000BAEA4 /* Fibonacci Spiral.storyboard in Resources */,
+				B3CBB07E2498378D00324082 /* Fibonacci Spiral.storyboard in Resources */,
 				244C997C24684996009E5355 /* Assets.xcassets in Resources */,
+				B3CBB08B249837E300324082 /* Localizable.strings in Resources */,
 				244C997A24684995009E5355 /* Main.storyboard in Resources */,
 				F2F91D0F248546DA000BAEA4 /* GoldenTriangle.storyboard in Resources */,
-				246E39F3247F74B500A85109 /* RuleOfSymmetry.storyboard in Resources */,
+				B3CBB0782498375D00324082 /* RuleOfSymmetry.storyboard in Resources */,
 				F2F91CFB24853E9A000BAEA4 /* DiagonalRule.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +471,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				244C997924684995009E5355 /* Base */,
+				B3CBB087249837CD00324082 /* id */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -465,14 +480,52 @@
 			isa = PBXVariantGroup;
 			children = (
 				244C997E24684996009E5355 /* Base */,
+				B3CBB088249837CD00324082 /* id */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B3CBB07A2498375D00324082 /* RuleOfSymmetry.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3CBB0792498375D00324082 /* Base */,
+				B3CBB081249837CC00324082 /* id */,
+			);
+			name = RuleOfSymmetry.storyboard;
+			sourceTree = "<group>";
+		};
+		B3CBB07D2498376500324082 /* ThePhiGrid.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3CBB07C2498376500324082 /* Base */,
+				B3CBB083249837CC00324082 /* id */,
+			);
+			name = ThePhiGrid.storyboard;
+			sourceTree = "<group>";
+		};
+		B3CBB0802498378D00324082 /* Fibonacci Spiral.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3CBB07F2498378D00324082 /* Base */,
+				B3CBB085249837CC00324082 /* id */,
+			);
+			name = "Fibonacci Spiral.storyboard";
+			sourceTree = "<group>";
+		};
+		B3CBB08D249837E300324082 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3CBB08C249837E300324082 /* en */,
+				B3CBB08E249837E400324082 /* id */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		F2F91CF924853E9A000BAEA4 /* DiagonalRule.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F2F91CFA24853E9A000BAEA4 /* Base */,
+				B3CBB082249837CC00324082 /* id */,
 			);
 			name = DiagonalRule.storyboard;
 			sourceTree = "<group>";
@@ -481,6 +534,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F2F91CFF248542B5000BAEA4 /* Base */,
+				B3CBB084249837CC00324082 /* id */,
 			);
 			name = RuleOfThird.storyboard;
 			sourceTree = "<group>";
@@ -489,6 +543,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F2F91D0E248546DA000BAEA4 /* Base */,
+				B3CBB086249837CC00324082 /* id */,
 			);
 			name = GoldenTriangle.storyboard;
 			sourceTree = "<group>";
@@ -500,6 +555,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -560,6 +616,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -616,7 +673,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 88F3B7HV75;
+				DEVELOPMENT_TEAM = VM75B5PWD9;
 				INFOPLIST_FILE = "POV-CameraApp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -636,7 +693,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 88F3B7HV75;
+				DEVELOPMENT_TEAM = VM75B5PWD9;
 				INFOPLIST_FILE = "POV-CameraApp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

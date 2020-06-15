@@ -1,0 +1,21 @@
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "0tf-dp-3fQ"; */
+"0tf-dp-3fQ.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UINavigationItem"; title = "Golden Triangle"; ObjectID = "Ecc-D1-rDP"; */
+"Ecc-D1-rDP.title" = "Golden Triangle";
+
+/* Class = "UISegmentedControl"; bgq-27-KDZ.segmentTitles[0] = "Definition"; ObjectID = "bgq-27-KDZ"; */
+"bgq-27-KDZ.segmentTitles[0]" = "Definisi";
+
+/* Class = "UISegmentedControl"; bgq-27-KDZ.segmentTitles[1] = "How"; ObjectID = "bgq-27-KDZ"; */
+"bgq-27-KDZ.segmentTitles[1]" = "Cara Pakai";
+
+/* Class = "UISegmentedControl"; bgq-27-KDZ.segmentTitles[2] = "Example"; ObjectID = "bgq-27-KDZ"; */
+"bgq-27-KDZ.segmentTitles[2]" = "Contoh";
+
+/* Class = "UITextView"; text = "textView"; ObjectID = "n2q-a1-igW"; */
+"n2q-a1-igW.text" = "textView";
+
+/* Class = "UITextView"; text = "Fibonacci Spiral"; ObjectID = "qqy-F7-Rut"; */
+"qqy-F7-Rut.text" = "Fibonacci Spiral";

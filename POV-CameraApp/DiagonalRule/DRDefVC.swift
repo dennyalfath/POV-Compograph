@@ -15,7 +15,7 @@ class DRDefVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        txtDef.text = "In diagonal rule composition, the elements in the image are organised based on diagonal line. Such composition can emphasise perspective, give the image sense of depth, and also add dynamism."
+        txtDef.text = NSLocalizedString("In diagonal rule composition, the elements in the image are organised based on diagonal line. Such composition can emphasise perspective, give the image sense of depth, and also add dynamism.", comment: "")
     }
     
 

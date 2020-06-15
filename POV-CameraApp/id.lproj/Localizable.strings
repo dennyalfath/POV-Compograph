@@ -1,0 +1,37 @@
+/* 
+  Localizable.strings
+  POV-CameraApp
+
+  Created by Zulfa Aliyah on 16/06/20.
+  Copyright © 2020 Denny Alfath. All rights reserved.
+*/
+
+/* ROS */
+"Symmetry refers to a line that splits an object in half and, if both sides of the object are an exact mirror image of each other, then this object is said to be symmetrical. The line that splits a symmetrical object is called the line of symmetry. Symmetry is a powerful tool that lets you automatically create harmony and a sense of aesthetically pleasing balance and proportion in a photograph.\n\nThere are two types of symmetry:\n1. Vertical Line of Symmetry (VLS): If an object’s line of symmetry is perpendicular to the horizon line, it has a vertical line of symmetry. \n2. Horizontal Line of Symmetry (HLS): If an object’s line of symmetry is parallel to the horizon line, it has a horizontal line of symmetry." = "Simetris mengacu kepada garis yang membagi objek menjadi dua dan, jika kedua sisi objek adalah cerminan satu sama lain, maka objek ini dikatakan simetrikal. Garis yang membagi objek yang simetris disebut garis simetris. Simetris adalah sebuah cara untuk membuatmu bisa menciptakan harmoni, keseimbangan dan proporsional dalam sebuah foto. \n\nAda dua tipe simetris: \n1. Vertical Line of Symmetry (VLS): Jika garis simetris tegak lurus dengan garis horizon.\n2. Horizontal Line of Symmetry (HLS): Jika garis simetris sejajar dengan garis horizon.";
+
+"1. Take your imaginary line and place it horizontally or vertically at the centre of your composition. \n2. You can experiment with as many type of symmetry as you like. The common types are horizontal, vertical, and radial symmetry" = "1. Letakkan garis secara horizontal atau vertikal di tengah objek. \n2. Bereksperimenlah sebanyak mungkin dengan tipe-tipe simetris lainnya. Tipe umum yang biasa digunakan adalah horizontal, vertikal, dan simetris radial";
+
+/* DR */
+"1. Try to tilt your camera. \n2. Look for leading lines that can help you with diagonal rule. \n3. Capture your photo from the bottom or top corner of the frame" = "1. Miringkan kamera. \n2. Cari garis penunjuk yang dapat membantumu dengan Diagonal Rule. \n3. Ambil fotomu dari sudut bawah atau sudut atas layar";
+
+"In diagonal rule composition, the elements in the image are organised based on diagonal line. Such composition can emphasise perspective, give the image sense of depth, and also add dynamism." = "Dalam komposisi Diagonal Rule, elemen dalam foto diatur berdasarkan garis diagonal. Komposisi seperti ini dapat menekankan perspektif, membuat foto memiliki kesan adanya kedalaman ruang dan menambah dinamisme.";
+
+/* TPG */
+"What you can see when using the Phi Grid is in the spaces where gridlines intersect. These so-called “sweet spots” are places where the eye is naturally drawn in an image. Cropping or aligning an image so that key parts fall in these areas will create focus and harmony." = "Apa yang bisa kamu lihat ketika menggunakan The Phi Grid terletak pada ruang di mana garis kisi saling bersilangan. Inilah tempat di mana mata akan tertuju dalam sebuah foto. Potong atau sejajarkan foto sehingga objek berada di area ini untuk menciptakan fokus dan harmoni.";
+
+"Place the objects of interest near or at the intersections of any of the lines" = "Tempatkan objek dekat atau pada persilangan garis";
+
+/* ROT */
+"The rule of thirds involves dividing up your image using 2 horizontal lines and 2 vertical lines, as shown below. You then position the important elements in your scene along those lines, or at the points where they meet. \n\nThe idea is that an off-centre composition is more pleasing to the eye and looks more natural than one where the subject is placed right in the middle of the frame. It also encourages you to make creative use of negative space, the empty areas around your subject." = "The rule of thirds membagi fotomu menggunakan dua garis horizontal dan dua garis vertikal. Posisikan elemen penting di sepanjang garis tersebut, atau pada persilangan di mana garis-garis bertemu. \n\nKomposisi objek yang terletak mendekati pertengahan layar lebih enak dipandang dan terlihat lebih natural daripada foto di mana objek diletakkan tepat di tengah foto. Hal ini juga mendorongmu untuk menggunakan ruang kosong di sekitar objek dengan kreatif.";
+
+"1. Think about what elements of the photo are most important, and try to position them at or near the lines and intersections of the grid. They don't have to be perfectly lined up as long as they're close. \n2. Move around to get the best composition" = "1. Tentukan elemen penting dari foto, dan coba posisikan mereka sepanjang garis atau di persilangan kisi. Tidak harus tepat, yang penting berada di dekat garis. \n2. Bergeraklah untuk mendapatkan komposisi terbaik\n";
+
+/* FS */
+"Fibonacci Spiral also called as Golden Spiral is built from a series of squares that are based on the Fibonacci numbers. The length of every square is a Fibonacci number. \n\nThis is a pattern that appears everywhere in nature and resembles the shell of a nautilus. The curve flows through the frame and leads your eye around the picture." = "Fibonacci Spiral juga disebut Golden Spiral (Spiral Emas) terdiri dari beberapa persegi yang berdasarkan pada nilai Fibonacci. Panjang dari setiap persegi adalah nilai Fibonacci. \n\nFibonacci Spiral adalah pola yang muncul di alam dan menyerupai cangkang Nautilus. Garis melengkung yang ditunjukkan akan mengarahkan matamu ke sekeliling foto.";
+
+"1. Take a look at the image of the spiral again. Its base – the smallest quadrangle – should be the area of your frame with greatest detail. Ideally, the rest of the object should be placed within the spiral. \n\n2. Mind that the center of the spiral need not be in the lower right corner. It can be anywhere in the frame, depending on your object.\n\n3. Shoot your object in such a way that its curves follow the curves of an imaginary golden spiral. This way the eye of the viewer will go straight to the object of interest and follow its natural expansion within the frame." = "1. Lihatlah foto spiral lagi. Persegi terkecil harus menjadi area dengan detil terbaik. Usahakan untuk meletakkan seluruh objek di dalam spiral. \n\n2. Letakkan pusat spiral di mana saja tergantung objekmu, kecuali di sudut kanan bawah. \n\n3. Ambil foto sedemikian rupa hingga lengkungannya mengikuti lengkungan Golden Spiral. Dengan begini mata yang melihat dapat langsung menuju object dan menjelajahi seluruh foto.";
+
+/* GT */
+"The frame is divided into four triangles of two different sizes, done by drawing one diagonal from one corner to another, and then two lines from the other corners, touching the first at 90 degree angles." = "Layar dibagi menjadi empat segitiga dengan dua ukuran yang berbeda, dengan membuat satu diagonal dari satu sudut ke sudut yang lain, kemudian dua garis dari sudut lainnya, dan saling menyentuh di sudut 90 derajat.";
+
+"1. Filling one of the triangles with the  subject. \n2. Placing the diagonal elements so that they  run along two of the lines" = "1. Letakkan objek di dalam salah satu segitiga. \n2. Letakkan elemen dengan bentuk diagonal sejajar dengan garis.";

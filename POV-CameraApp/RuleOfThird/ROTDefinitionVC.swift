@@ -15,7 +15,7 @@ class ROTDefinitionVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        txtDef.text = "The rule of thirds involves dividing up your image using 2 horizontal lines and 2 vertical lines, as shown below. You then position the important elements in your scene along those lines, or at the points where they meet.  The idea is that an off-centre composition is more pleasing to the eye and looks more natural than one where the subject is placed right in the middle of the frame. It also encourages you to make creative use of negative space, the empty areas around your subject."
+        txtDef.text = NSLocalizedString("The rule of thirds involves dividing up your image using 2 horizontal lines and 2 vertical lines, as shown below. You then position the important elements in your scene along those lines, or at the points where they meet. \n\nThe idea is that an off-centre composition is more pleasing to the eye and looks more natural than one where the subject is placed right in the middle of the frame. It also encourages you to make creative use of negative space, the empty areas around your subject.", comment: "")
     }
     
 

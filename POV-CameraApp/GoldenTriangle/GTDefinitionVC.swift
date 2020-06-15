@@ -15,7 +15,7 @@ class GTDefinitionVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        txtDef.text = "The frame is divided into four triangles of two different sizes, done by drawing one diagonal from one corner to another, and then two lines from the other corners, touching the first at 90 degree angles."
+        txtDef.text = NSLocalizedString("The frame is divided into four triangles of two different sizes, done by drawing one diagonal from one corner to another, and then two lines from the other corners, touching the first at 90 degree angles.", comment: "")
     }
     
 

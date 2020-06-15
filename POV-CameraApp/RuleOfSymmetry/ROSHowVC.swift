@@ -15,7 +15,7 @@ class ROSHowVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        txtHow.text = "1. Take your imaginary line and place it horizontally or vertically at the centre of your composition  2. You can experiment with as many type of symmetry as you like. The common types are horizontal, vertical, and radial symmetry"
+        txtHow.text = NSLocalizedString("1. Take your imaginary line and place it horizontally or vertically at the centre of your composition. \n2. You can experiment with as many type of symmetry as you like. The common types are horizontal, vertical, and radial symmetry", comment: "")
     }
     
 

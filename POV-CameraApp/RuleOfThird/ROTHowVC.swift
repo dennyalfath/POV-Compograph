@@ -15,7 +15,7 @@ class ROTHowVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        txtHow.text = "1. Think about what elements of the photo are most important, and try to position them at or near the lines and intersections of the grid. They don't have to be perfectly lined up as long as they're close.  2. Move around to get the best composition"
+        txtHow.text = NSLocalizedString("1. Think about what elements of the photo are most important, and try to position them at or near the lines and intersections of the grid. They don't have to be perfectly lined up as long as they're close. \n2. Move around to get the best composition", comment: "")
     }
     
 

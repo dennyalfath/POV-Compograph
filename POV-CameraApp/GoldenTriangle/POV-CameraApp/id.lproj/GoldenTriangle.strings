@@ -1,0 +1,21 @@
+
+/* Class = "UISegmentedControl"; 1pL-Im-YqN.segmentTitles[0] = "Definition"; ObjectID = "1pL-Im-YqN"; */
+"1pL-Im-YqN.segmentTitles[0]" = "Definisi";
+
+/* Class = "UISegmentedControl"; 1pL-Im-YqN.segmentTitles[1] = "How"; ObjectID = "1pL-Im-YqN"; */
+"1pL-Im-YqN.segmentTitles[1]" = "Cara Pakai";
+
+/* Class = "UISegmentedControl"; 1pL-Im-YqN.segmentTitles[2] = "Example"; ObjectID = "1pL-Im-YqN"; */
+"1pL-Im-YqN.segmentTitles[2]" = "Contoh";
+
+/* Class = "UITextView"; text = "textView"; ObjectID = "SDp-hd-Puz"; */
+"SDp-hd-Puz.text" = "textView";
+
+/* Class = "UITextView"; text = "textView"; ObjectID = "Sfs-dc-svk"; */
+"Sfs-dc-svk.text" = "textView";
+
+/* Class = "UINavigationItem"; title = "Golden Triangle"; ObjectID = "gV9-2y-xmf"; */
+"gV9-2y-xmf.title" = "Golden Triangle";
+
+/* Class = "UITextView"; text = "Golden Triangle"; ObjectID = "kNZ-w1-YWD"; */
+"kNZ-w1-YWD.text" = "Golden Triangle";

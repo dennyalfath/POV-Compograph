@@ -15,7 +15,7 @@ class GTHowVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        txtHow.text = "1. Filling one of the triangles with the  subject  2. Placing the diagonal elements so that they  run along two of the lines"
+        txtHow.text = NSLocalizedString("1. Filling one of the triangles with the  subject. \n2. Placing the diagonal elements so that they  run along two of the lines", comment: "")
     }
     
 

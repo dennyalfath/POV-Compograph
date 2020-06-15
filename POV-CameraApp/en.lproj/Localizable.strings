@@ -1,0 +1,38 @@
+/* 
+  Localizable.strings
+  POV-CameraApp
+
+  Created by Zulfa Aliyah on 16/06/20.
+  Copyright © 2020 Denny Alfath. All rights reserved.
+*/
+
+/* ROS */
+"Symmetry refers to a line that splits an object in half and, if both sides of the object are an exact mirror image of each other, then this object is said to be symmetrical. The line that splits a symmetrical object is called the line of symmetry. Symmetry is a powerful tool that lets you automatically create harmony and a sense of aesthetically pleasing balance and proportion in a photograph.\n\nThere are two types of symmetry:\n1. Vertical Line of Symmetry (VLS): If an object’s line of symmetry is perpendicular to the horizon line, it has a vertical line of symmetry. \n2. Horizontal Line of Symmetry (HLS): If an object’s line of symmetry is parallel to the horizon line, it has a horizontal line of symmetry." = "Symmetry refers to a line that splits an object in half and, if both sides of the object are an exact mirror image of each other, then this object is said to be symmetrical. The line that splits a symmetrical object is called the line of symmetry. Symmetry is a powerful tool that lets you automatically create harmony and a sense of aesthetically pleasing balance and proportion in a photograph.\n\nThere are two types of symmetry:\n1. Vertical Line of Symmetry (VLS): If an object’s line of symmetry is perpendicular to the horizon line, it has a vertical line of symmetry. \n2. Horizontal Line of Symmetry (HLS): If an object’s line of symmetry is parallel to the horizon line, it has a horizontal line of symmetry.";
+
+"1. Take your imaginary line and place it horizontally or vertically at the centre of your composition. \n2. You can experiment with as many type of symmetry as you like. The common types are horizontal, vertical, and radial symmetry" = "1. Take your imaginary line and place it horizontally or vertically at the centre of your composition. \n2. You can experiment with as many type of symmetry as you like. The common types are horizontal, vertical, and radial symmetry";
+
+
+/* DR */
+"1. Try to tilt your camera. \n2. Look for leading lines that can help you with diagonal rule. \n3. Capture your photo from the bottom or top corner of the frame" = "1. Try to tilt your camera. \n2. Look for leading lines that can help you with diagonal rule. \n3. Capture your photo from the bottom or top corner of the frame";
+
+"In diagonal rule composition, the elements in the image are organised based on diagonal line. Such composition can emphasise perspective, give the image sense of depth, and also add dynamism." = "In diagonal rule composition, the elements in the image are organised based on diagonal line. Such composition can emphasise perspective, give the image sense of depth, and also add dynamism.";
+
+/* TPG */
+"What you can see when using the Phi Grid is in the spaces where gridlines intersect. These so-called “sweet spots” are places where the eye is naturally drawn in an image. Cropping or aligning an image so that key parts fall in these areas will create focus and harmony." = "What you can see when using the Phi Grid is in the spaces where gridlines intersect. These so-called “sweet spots” are places where the eye is naturally drawn in an image. Cropping or aligning an image so that key parts fall in these areas will create focus and harmony.";
+
+"Place the objects of interest near or at the intersections of any of the lines" = "Place the objects of interest near or at the intersections of any of the lines";
+
+/* ROT */
+"The rule of thirds involves dividing up your image using 2 horizontal lines and 2 vertical lines, as shown below. You then position the important elements in your scene along those lines, or at the points where they meet. \n\nThe idea is that an off-centre composition is more pleasing to the eye and looks more natural than one where the subject is placed right in the middle of the frame. It also encourages you to make creative use of negative space, the empty areas around your subject." = "The rule of thirds involves dividing up your image using 2 horizontal lines and 2 vertical lines, as shown below. You then position the important elements in your scene along those lines, or at the points where they meet. \n\nThe idea is that an off-centre composition is more pleasing to the eye and looks more natural than one where the subject is placed right in the middle of the frame. It also encourages you to make creative use of negative space, the empty areas around your subject.";
+
+"1. Think about what elements of the photo are most important, and try to position them at or near the lines and intersections of the grid. They don't have to be perfectly lined up as long as they're close. \n2. Move around to get the best composition" = "1. Think about what elements of the photo are most important, and try to position them at or near the lines and intersections of the grid. They don't have to be perfectly lined up as long as they're close. \n2. Move around to get the best composition";
+
+/* FS */
+"Fibonacci Spiral also called as Golden Spiral is built from a series of squares that are based on the Fibonacci numbers. The length of every square is a Fibonacci number. \n\nThis is a pattern that appears everywhere in nature and resembles the shell of a nautilus. The curve flows through the frame and leads your eye around the picture." = "Fibonacci Spiral also called as Golden Spiral is built from a series of squares that are based on the Fibonacci numbers. The length of every square is a Fibonacci number. \n\nThis is a pattern that appears everywhere in nature and resembles the shell of a nautilus. The curve flows through the frame and leads your eye around the picture.";
+
+"1. Take a look at the image of the spiral again. Its base – the smallest quadrangle – should be the area of your frame with greatest detail. Ideally, the rest of the object should be placed within the spiral. \n\n2. Mind that the center of the spiral need not be in the lower right corner. It can be anywhere in the frame, depending on your object.\n\n3. Shoot your object in such a way that its curves follow the curves of an imaginary golden spiral. This way the eye of the viewer will go straight to the object of interest and follow its natural expansion within the frame." = "1. Take a look at the image of the spiral again. Its base – the smallest quadrangle – should be the area of your frame with greatest detail. Ideally, the rest of the object should be placed within the spiral. \n\n2. Mind that the center of the spiral need not be in the lower right corner. It can be anywhere in the frame, depending on your object.\n\n3. Shoot your object in such a way that its curves follow the curves of an imaginary golden spiral. This way the eye of the viewer will go straight to the object of interest and follow its natural expansion within the frame.";
+
+/* GT */
+"The frame is divided into four triangles of two different sizes, done by drawing one diagonal from one corner to another, and then two lines from the other corners, touching the first at 90 degree angles." = "The frame is divided into four triangles of two different sizes, done by drawing one diagonal from one corner to another, and then two lines from the other corners, touching the first at 90 degree angles.";
+
+"1. Filling one of the triangles with the  subject. \n2. Placing the diagonal elements so that they  run along two of the lines" = "1. Filling one of the triangles with the  subject. \n2. Placing the diagonal elements so that they  run along two of the lines";

@@ -1,0 +1,21 @@
+
+/* Class = "UINavigationItem"; title = "Golden Triangle"; ObjectID = "ZG2-SB-pQJ"; */
+"ZG2-SB-pQJ.title" = "Golden Triangle";
+
+/* Class = "UITextView"; text = "Rule Of Symmetry"; ObjectID = "cKt-2m-9fv"; */
+"cKt-2m-9fv.text" = "Rule Of Symmetry";
+
+/* Class = "UITextView"; text = "textView"; ObjectID = "htK-YL-nO9"; */
+"htK-YL-nO9.text" = "textView";
+
+/* Class = "UISegmentedControl"; i6A-g6-wDo.segmentTitles[0] = "Definition"; ObjectID = "i6A-g6-wDo"; */
+"i6A-g6-wDo.segmentTitles[0]" = "Definisi";
+
+/* Class = "UISegmentedControl"; i6A-g6-wDo.segmentTitles[1] = "How"; ObjectID = "i6A-g6-wDo"; */
+"i6A-g6-wDo.segmentTitles[1]" = "Cara Pakai";
+
+/* Class = "UISegmentedControl"; i6A-g6-wDo.segmentTitles[2] = "Example"; ObjectID = "i6A-g6-wDo"; */
+"i6A-g6-wDo.segmentTitles[2]" = "Contoh";
+
+/* Class = "UITextView"; text = "textView"; ObjectID = "mJB-Ha-ra7"; */
+"mJB-Ha-ra7.text" = "textView";

@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Tap screen to continue..."; ObjectID = "5WW-q1-QGT"; */
+"5WW-q1-QGT.text" = "Ketuk layar untuk melanjutkan";
+
+/* Class = "UIButton"; normalTitle = "Help"; ObjectID = "wzZ-vk-pUz"; */
+"wzZ-vk-pUz.normalTitle" = "Bantuan";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "x0G-EG-9aC"; */
+"x0G-EG-9aC.normalTitle" = "Kembali";
+
+/* Class = "UIButton"; normalTitle = "＜ Back"; ObjectID = "zBd-gH-21F"; */
+"zBd-gH-21F.normalTitle" = "Kembali";

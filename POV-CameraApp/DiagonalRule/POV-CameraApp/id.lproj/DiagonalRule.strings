@@ -1,0 +1,21 @@
+
+/* Class = "UITextView"; text = "textView"; ObjectID = "Ebw-80-IVp"; */
+"Ebw-80-IVp.text" = "textView";
+
+/* Class = "UINavigationItem"; title = "Golden Triangle"; ObjectID = "PLW-dm-JZ6"; */
+"PLW-dm-JZ6.title" = "Golden Triangle";
+
+/* Class = "UISegmentedControl"; cu4-ir-ogd.segmentTitles[0] = "Definition"; ObjectID = "cu4-ir-ogd"; */
+"cu4-ir-ogd.segmentTitles[0]" = "Definisi";
+
+/* Class = "UISegmentedControl"; cu4-ir-ogd.segmentTitles[1] = "How"; ObjectID = "cu4-ir-ogd"; */
+"cu4-ir-ogd.segmentTitles[1]" = "Cara Pakai";
+
+/* Class = "UISegmentedControl"; cu4-ir-ogd.segmentTitles[2] = "Example"; ObjectID = "cu4-ir-ogd"; */
+"cu4-ir-ogd.segmentTitles[2]" = "Contoh";
+
+/* Class = "UITextView"; text = "Diagonal Rule"; ObjectID = "k88-SN-jGz"; */
+"k88-SN-jGz.text" = "Diagonal Rule";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "kpE-J1-fgc"; */
+"kpE-J1-fgc.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
