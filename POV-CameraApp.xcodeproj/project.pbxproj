@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		240EC59D247F76A90079F0E4 /* RuleOfSymmetryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240EC59C247F76A90079F0E4 /* RuleOfSymmetryVC.swift */; };
+		241653422498294700A4CBF5 /* ROSHowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241653412498294700A4CBF5 /* ROSHowVC.swift */; };
 		241B7E4E246E3B1C00267E6B /* GoldenTriangleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B7E4D246E3B1C00267E6B /* GoldenTriangleVC.swift */; };
 		243D7DB1247CBD510035CF57 /* GTDefinitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243D7DB0247CBD510035CF57 /* GTDefinitionVC.swift */; };
 		243D7DB3247CBD650035CF57 /* GTHowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243D7DB2247CBD650035CF57 /* GTHowVC.swift */; };
@@ -62,6 +63,7 @@
 
 /* Begin PBXFileReference section */
 		240EC59C247F76A90079F0E4 /* RuleOfSymmetryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleOfSymmetryVC.swift; sourceTree = "<group>"; };
+		241653412498294700A4CBF5 /* ROSHowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROSHowVC.swift; sourceTree = "<group>"; };
 		241B7E4D246E3B1C00267E6B /* GoldenTriangleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldenTriangleVC.swift; sourceTree = "<group>"; };
 		243D7DB0247CBD510035CF57 /* GTDefinitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTDefinitionVC.swift; sourceTree = "<group>"; };
 		243D7DB2247CBD650035CF57 /* GTHowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTHowVC.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 				246E39F2247F74B500A85109 /* RuleOfSymmetry.storyboard */,
 				240EC59C247F76A90079F0E4 /* RuleOfSymmetryVC.swift */,
 				248F5D962497D9B1002D0E2C /* ROSDefinitionVC.swift */,
+				241653412498294700A4CBF5 /* ROSHowVC.swift */,
 			);
 			path = RuleOfSymmetry;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				24B2A8F8249813D8007E6EF6 /* DRHowVC.swift in Sources */,
 				246E39EB247F588400A85109 /* ThePhiGridVC.swift in Sources */,
 				240EC59D247F76A90079F0E4 /* RuleOfSymmetryVC.swift in Sources */,
+				241653422498294700A4CBF5 /* ROSHowVC.swift in Sources */,
 				243D7DB1247CBD510035CF57 /* GTDefinitionVC.swift in Sources */,
 				248857E8247E201700295B9C /* FSExampleVC.swift in Sources */,
 				244C997724684995009E5355 /* ViewController.swift in Sources */,

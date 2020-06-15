@@ -119,16 +119,15 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ROSOV" translatesAutoresizingMaskIntoConstraints="NO" id="QVu-ex-VEG">
                                 <rect key="frame" x="20" y="0.0" width="374" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="NbG-ta-nN8"/>
+                                    <constraint firstAttribute="height" constant="200" id="3ta-ZF-EIb"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="htK-YL-nO9">
-                                <rect key="frame" x="20" y="220" width="374" height="400"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="textView" textAlignment="justified" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="htK-YL-nO9">
+                                <rect key="frame" x="20" y="220" width="374" height="300"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="TWW-BL-B5Z"/>
+                                    <constraint firstAttribute="height" constant="300" id="uqq-oS-4BW"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -136,12 +135,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="QVu-ex-VEG" firstAttribute="top" secondItem="Rnd-GR-GsU" secondAttribute="top" id="3rZ-5a-ui0"/>
-                            <constraint firstItem="yBH-m0-xJH" firstAttribute="trailing" secondItem="htK-YL-nO9" secondAttribute="trailing" constant="20" id="D3d-bk-grr"/>
-                            <constraint firstItem="htK-YL-nO9" firstAttribute="leading" secondItem="yBH-m0-xJH" secondAttribute="leading" constant="20" id="Jo7-zc-Vfl"/>
-                            <constraint firstItem="QVu-ex-VEG" firstAttribute="leading" secondItem="yBH-m0-xJH" secondAttribute="leading" constant="20" id="W4i-zl-ypo"/>
-                            <constraint firstItem="yBH-m0-xJH" firstAttribute="trailing" secondItem="QVu-ex-VEG" secondAttribute="trailing" constant="20" id="a2N-J7-Lco"/>
-                            <constraint firstItem="htK-YL-nO9" firstAttribute="top" secondItem="QVu-ex-VEG" secondAttribute="bottom" constant="20" id="tc4-pa-hsr"/>
+                            <constraint firstItem="QVu-ex-VEG" firstAttribute="top" secondItem="Rnd-GR-GsU" secondAttribute="top" id="36U-03-Yd4"/>
+                            <constraint firstItem="yBH-m0-xJH" firstAttribute="trailing" secondItem="htK-YL-nO9" secondAttribute="trailing" constant="20" id="OHo-sf-sLA"/>
+                            <constraint firstItem="htK-YL-nO9" firstAttribute="leading" secondItem="yBH-m0-xJH" secondAttribute="leading" constant="20" id="aad-cN-wJB"/>
+                            <constraint firstItem="htK-YL-nO9" firstAttribute="top" secondItem="QVu-ex-VEG" secondAttribute="bottom" constant="20" id="oFu-2z-tka"/>
+                            <constraint firstItem="QVu-ex-VEG" firstAttribute="leading" secondItem="yBH-m0-xJH" secondAttribute="leading" constant="20" id="qyD-qq-PDa"/>
+                            <constraint firstItem="yBH-m0-xJH" firstAttribute="trailing" secondItem="QVu-ex-VEG" secondAttribute="trailing" constant="20" id="sDs-QH-nHJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yBH-m0-xJH"/>
                     </view>
@@ -156,41 +155,42 @@
         <!--How View Controller-->
         <scene sceneID="g6c-er-cos">
             <objects>
-                <viewController id="AmM-ZA-inQ" userLabel="How View Controller" sceneMemberID="viewController">
+                <viewController id="AmM-ZA-inQ" userLabel="How View Controller" customClass="ROSHowVC" customModule="POV_CameraApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WSA-kc-Byw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="604"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="1. Take your imaginary line and place it horizontally or vertically at the centre of your composition" textAlignment="justified" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FSJ-fS-ZP8">
-                                <rect key="frame" x="20" y="0.0" width="374" height="89"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ROS1" translatesAutoresizingMaskIntoConstraints="NO" id="joL-1Y-uRz">
+                                <rect key="frame" x="20" y="0.0" width="374" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="11j-x9-SAW"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="textView" textAlignment="justified" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mJB-Ha-ra7">
+                                <rect key="frame" x="20" y="220" width="374" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="iXv-T5-dXV"/>
+                                </constraints>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="2. You can experiment with as many type of symmetry as you like. The common types are horizontal, vertical, and radial symmetry" textAlignment="justified" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F6j-ZL-fg2">
-                                <rect key="frame" x="20" y="244" width="374" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ROS1" translatesAutoresizingMaskIntoConstraints="NO" id="joL-1Y-uRz">
-                                <rect key="frame" x="95" y="88" width="224" height="148"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ROS3" translatesAutoresizingMaskIntoConstraints="NO" id="b2M-eN-mWQ">
-                                <rect key="frame" x="74" y="333" width="126" height="186"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ROS5" translatesAutoresizingMaskIntoConstraints="NO" id="kgk-nJ-4VS">
-                                <rect key="frame" x="214" y="333" width="126" height="186"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mJB-Ha-ra7" firstAttribute="top" secondItem="joL-1Y-uRz" secondAttribute="bottom" constant="20" id="0E0-7L-t9c"/>
+                            <constraint firstItem="joL-1Y-uRz" firstAttribute="top" secondItem="WSA-kc-Byw" secondAttribute="top" id="711-en-p3N"/>
+                            <constraint firstItem="mJB-Ha-ra7" firstAttribute="leading" secondItem="y1P-jx-TKE" secondAttribute="leading" constant="20" id="GPe-L7-2hy"/>
+                            <constraint firstItem="y1P-jx-TKE" firstAttribute="trailing" secondItem="mJB-Ha-ra7" secondAttribute="trailing" constant="20" id="H8Y-1G-SDS"/>
+                            <constraint firstItem="joL-1Y-uRz" firstAttribute="leading" secondItem="y1P-jx-TKE" secondAttribute="leading" constant="20" id="I46-fz-3Fp"/>
+                            <constraint firstItem="y1P-jx-TKE" firstAttribute="trailing" secondItem="joL-1Y-uRz" secondAttribute="trailing" constant="20" id="eES-6J-mPt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="y1P-jx-TKE"/>
                     </view>
+                    <connections>
+                        <outlet property="txtHow" destination="mJB-Ha-ra7" id="xJV-lB-FZC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j3E-gJ-yWw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -229,9 +229,7 @@
     <resources>
         <image name="ROS1" width="256" height="171"/>
         <image name="ROS2" width="256" height="165"/>
-        <image name="ROS3" width="170" height="256"/>
         <image name="ROS4" width="256" height="192"/>
-        <image name="ROS5" width="205" height="256"/>
         <image name="ROSOV" width="256" height="187"/>
     </resources>
 </document>
