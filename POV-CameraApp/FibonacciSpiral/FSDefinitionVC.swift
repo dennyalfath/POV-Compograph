@@ -10,10 +10,12 @@ import UIKit
 
 class FSDefinitionVC: UIViewController {
 
+    @IBOutlet weak var txtDef: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        txtDef.text = "Fibonacci Spiral also called as Golden Spiral is built from a series of squares that are based on the Fibonacci numbers. The length of every square is a Fibonacci number.  This is a pattern that appears everywhere in nature and resembles the shell of a nautilus. The curve flows through the frame and leads your eye around the picture."
     }
     
 

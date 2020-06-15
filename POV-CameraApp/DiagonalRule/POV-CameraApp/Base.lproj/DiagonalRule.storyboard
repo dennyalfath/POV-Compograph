@@ -110,27 +110,41 @@
         <!--Definition View Controller-->
         <scene sceneID="nud-sf-Gdt">
             <objects>
-                <viewController id="RzH-Id-0Gq" userLabel="Definition View Controller" sceneMemberID="viewController">
+                <viewController id="RzH-Id-0Gq" userLabel="Definition View Controller" customClass="DRDefVC" customModule="POV_CameraApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8fZ-Di-fyo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="610"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Ebw-80-IVp">
-                                <rect key="frame" x="20" y="0.0" width="374" height="94"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">In diagonal rule composition, the elements in the image are organised based on diagonal line. Such composition can emphasise perspective, give the image sense of depth, and also add dynamism.</string>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DROV" translatesAutoresizingMaskIntoConstraints="NO" id="chb-DI-UiJ">
+                                <rect key="frame" x="20" y="0.0" width="374" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="RgW-hz-DhR"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="textView" textAlignment="justified" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ebw-80-IVp">
+                                <rect key="frame" x="20" y="220" width="374" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="BQW-mf-cHP"/>
+                                </constraints>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DROV" translatesAutoresizingMaskIntoConstraints="NO" id="chb-DI-UiJ">
-                                <rect key="frame" x="20" y="122" width="374" height="212"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BGz-nd-2Nx" firstAttribute="trailing" secondItem="chb-DI-UiJ" secondAttribute="trailing" constant="20" id="9cv-XS-fXo"/>
+                            <constraint firstItem="chb-DI-UiJ" firstAttribute="leading" secondItem="BGz-nd-2Nx" secondAttribute="leading" constant="20" id="Jc9-pc-cYR"/>
+                            <constraint firstItem="Ebw-80-IVp" firstAttribute="leading" secondItem="BGz-nd-2Nx" secondAttribute="leading" constant="20" id="Q2h-Nt-Dse"/>
+                            <constraint firstItem="Ebw-80-IVp" firstAttribute="top" secondItem="chb-DI-UiJ" secondAttribute="bottom" constant="20" id="TZv-PU-05g"/>
+                            <constraint firstItem="BGz-nd-2Nx" firstAttribute="trailing" secondItem="Ebw-80-IVp" secondAttribute="trailing" constant="20" id="b9M-hg-4mf"/>
+                            <constraint firstItem="chb-DI-UiJ" firstAttribute="top" secondItem="8fZ-Di-fyo" secondAttribute="top" id="dah-lP-iy9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="BGz-nd-2Nx"/>
                     </view>
+                    <connections>
+                        <outlet property="txtDef" destination="Ebw-80-IVp" id="BBa-eq-qJE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ttF-a8-FYk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -139,33 +153,43 @@
         <!--How View Controller-->
         <scene sceneID="GCE-jm-3ON">
             <objects>
-                <viewController id="8bB-GB-IlC" userLabel="How View Controller" sceneMemberID="viewController">
+                <viewController id="8bB-GB-IlC" userLabel="How View Controller" customClass="DRHowVC" customModule="POV_CameraApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rf0-ZL-hf6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="604"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="1. Try to tilt your camera  2. Look for leading lines that can help you with diagonal rule" translatesAutoresizingMaskIntoConstraints="NO" id="Yae-Aa-qAb">
-                                <rect key="frame" x="20" y="0.0" width="374" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DR1" translatesAutoresizingMaskIntoConstraints="NO" id="BZp-DJ-8F5">
-                                <rect key="frame" x="20" y="117" width="374" height="179"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DR1" translatesAutoresizingMaskIntoConstraints="NO" id="BZp-DJ-8F5">
+                                <rect key="frame" x="20" y="0.0" width="374" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Aoi-Pz-gzL"/>
+                                </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="3. Capture your photo from the bottom or top corner of the frame" translatesAutoresizingMaskIntoConstraints="NO" id="XZg-gZ-45g">
-                                <rect key="frame" x="20" y="324" width="374" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kpE-J1-fgc">
+                                <rect key="frame" x="20" y="220" width="374" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="61n-Gc-Y5S"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kpE-J1-fgc" firstAttribute="leading" secondItem="7oN-Cj-gYG" secondAttribute="leading" constant="20" id="3tf-er-agx"/>
+                            <constraint firstItem="BZp-DJ-8F5" firstAttribute="leading" secondItem="7oN-Cj-gYG" secondAttribute="leading" constant="20" id="NQ5-Zq-P9c"/>
+                            <constraint firstItem="BZp-DJ-8F5" firstAttribute="top" secondItem="rf0-ZL-hf6" secondAttribute="top" id="bDE-Pn-Om7"/>
+                            <constraint firstItem="7oN-Cj-gYG" firstAttribute="trailing" secondItem="kpE-J1-fgc" secondAttribute="trailing" constant="20" id="chR-X3-j1Z"/>
+                            <constraint firstItem="7oN-Cj-gYG" firstAttribute="trailing" secondItem="BZp-DJ-8F5" secondAttribute="trailing" constant="20" id="wPw-Bc-isg"/>
+                            <constraint firstItem="kpE-J1-fgc" firstAttribute="top" secondItem="BZp-DJ-8F5" secondAttribute="bottom" constant="20" id="waV-HZ-Qic"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7oN-Cj-gYG"/>
                     </view>
+                    <connections>
+                        <outlet property="txtHow" destination="kpE-J1-fgc" id="8uL-CJ-Tbk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dx2-7F-cFq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

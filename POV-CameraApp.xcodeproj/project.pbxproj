@@ -31,6 +31,10 @@
 		248F5D972497D9B1002D0E2C /* ROSDefinitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248F5D962497D9B1002D0E2C /* ROSDefinitionVC.swift */; };
 		24B2A8F424980EA9007E6EF6 /* ROTDefinitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B2A8F324980EA9007E6EF6 /* ROTDefinitionVC.swift */; };
 		24B2A8F624981030007E6EF6 /* ROTHowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B2A8F524981030007E6EF6 /* ROTHowVC.swift */; };
+		24B2A8F8249813D8007E6EF6 /* DRHowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B2A8F7249813D8007E6EF6 /* DRHowVC.swift */; };
+		24B2A8FA24981434007E6EF6 /* DRDefVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B2A8F924981434007E6EF6 /* DRDefVC.swift */; };
+		24B2A8FC249815DD007E6EF6 /* PGDefVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B2A8FB249815DD007E6EF6 /* PGDefVC.swift */; };
+		24B2A8FE249816BE007E6EF6 /* PGHowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B2A8FD249816BE007E6EF6 /* PGHowVC.swift */; };
 		F286598224852D17006F1522 /* GridUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F286598124852D17006F1522 /* GridUI.swift */; };
 		F2F91CFB24853E9A000BAEA4 /* DiagonalRule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F91CF924853E9A000BAEA4 /* DiagonalRule.storyboard */; };
 		F2F91CFD24854036000BAEA4 /* ThePhiGrid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F91CFC24854036000BAEA4 /* ThePhiGrid.storyboard */; };
@@ -87,6 +91,10 @@
 		248F5D962497D9B1002D0E2C /* ROSDefinitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROSDefinitionVC.swift; sourceTree = "<group>"; };
 		24B2A8F324980EA9007E6EF6 /* ROTDefinitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROTDefinitionVC.swift; sourceTree = "<group>"; };
 		24B2A8F524981030007E6EF6 /* ROTHowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROTHowVC.swift; sourceTree = "<group>"; };
+		24B2A8F7249813D8007E6EF6 /* DRHowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DRHowVC.swift; sourceTree = "<group>"; };
+		24B2A8F924981434007E6EF6 /* DRDefVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DRDefVC.swift; sourceTree = "<group>"; };
+		24B2A8FB249815DD007E6EF6 /* PGDefVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGDefVC.swift; sourceTree = "<group>"; };
+		24B2A8FD249816BE007E6EF6 /* PGHowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGHowVC.swift; sourceTree = "<group>"; };
 		F286598124852D17006F1522 /* GridUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridUI.swift; sourceTree = "<group>"; };
 		F2F91CFA24853E9A000BAEA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "POV-CameraApp/Base.lproj/DiagonalRule.storyboard"; sourceTree = "<group>"; };
 		F2F91CFC24854036000BAEA4 /* ThePhiGrid.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ThePhiGrid.storyboard; sourceTree = "<group>"; };
@@ -184,6 +192,8 @@
 			children = (
 				F2F91CFC24854036000BAEA4 /* ThePhiGrid.storyboard */,
 				246E39EA247F588400A85109 /* ThePhiGridVC.swift */,
+				24B2A8FB249815DD007E6EF6 /* PGDefVC.swift */,
+				24B2A8FD249816BE007E6EF6 /* PGHowVC.swift */,
 			);
 			path = ThePhiGrid;
 			sourceTree = "<group>";
@@ -193,6 +203,8 @@
 			children = (
 				F2F91CF924853E9A000BAEA4 /* DiagonalRule.storyboard */,
 				246E39EF247F73B400A85109 /* DiagonalRuleVC.swift */,
+				24B2A8F7249813D8007E6EF6 /* DRHowVC.swift */,
+				24B2A8F924981434007E6EF6 /* DRDefVC.swift */,
 			);
 			path = DiagonalRule;
 			sourceTree = "<group>";
@@ -380,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				248F5D972497D9B1002D0E2C /* ROSDefinitionVC.swift in Sources */,
+				24B2A8F8249813D8007E6EF6 /* DRHowVC.swift in Sources */,
 				246E39EB247F588400A85109 /* ThePhiGridVC.swift in Sources */,
 				240EC59D247F76A90079F0E4 /* RuleOfSymmetryVC.swift in Sources */,
 				243D7DB1247CBD510035CF57 /* GTDefinitionVC.swift in Sources */,
@@ -389,12 +402,15 @@
 				243D7DB3247CBD650035CF57 /* GTHowVC.swift in Sources */,
 				243D7DB5247CBD710035CF57 /* GTExampleVC.swift in Sources */,
 				248857E6247E200800295B9C /* FSHowVC.swift in Sources */,
+				24B2A8FC249815DD007E6EF6 /* PGDefVC.swift in Sources */,
 				248857E2247E1C4600295B9C /* FibonacciSpiralVC.swift in Sources */,
 				248857ED247E28B500295B9C /* RuleOfThirdVC.swift in Sources */,
+				24B2A8FA24981434007E6EF6 /* DRDefVC.swift in Sources */,
 				24B2A8F624981030007E6EF6 /* ROTHowVC.swift in Sources */,
 				241B7E4E246E3B1C00267E6B /* GoldenTriangleVC.swift in Sources */,
 				248857E4247E1FF500295B9C /* FSDefinitionVC.swift in Sources */,
 				246E39F0247F73B400A85109 /* DiagonalRuleVC.swift in Sources */,
+				24B2A8FE249816BE007E6EF6 /* PGHowVC.swift in Sources */,
 				24B2A8F424980EA9007E6EF6 /* ROTDefinitionVC.swift in Sources */,
 				244C997324684995009E5355 /* AppDelegate.swift in Sources */,
 				244C997524684995009E5355 /* SceneDelegate.swift in Sources */,

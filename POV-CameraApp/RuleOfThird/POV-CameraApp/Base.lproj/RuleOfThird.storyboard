@@ -122,10 +122,10 @@
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y6f-po-NoI">
-                                <rect key="frame" x="20" y="220" width="374" height="400"/>
+                                <rect key="frame" x="20" y="220" width="374" height="300"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="tah-io-nSX"/>
+                                    <constraint firstAttribute="height" constant="300" id="sOC-Pg-VKl"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -135,11 +135,11 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="LU4-kR-4fA" firstAttribute="trailing" secondItem="Y6f-po-NoI" secondAttribute="trailing" constant="20" id="JVs-hM-idl"/>
+                            <constraint firstItem="Y6f-po-NoI" firstAttribute="leading" secondItem="LU4-kR-4fA" secondAttribute="leading" constant="20" id="59r-Sf-1N4"/>
+                            <constraint firstItem="LU4-kR-4fA" firstAttribute="trailing" secondItem="Y6f-po-NoI" secondAttribute="trailing" constant="20" id="GDB-oW-sBT"/>
+                            <constraint firstItem="Y6f-po-NoI" firstAttribute="top" secondItem="ySL-rs-3M6" secondAttribute="bottom" constant="20" id="JMp-A7-EIW"/>
                             <constraint firstItem="LU4-kR-4fA" firstAttribute="trailing" secondItem="ySL-rs-3M6" secondAttribute="trailing" constant="20" id="Pu3-gD-raM"/>
-                            <constraint firstItem="Y6f-po-NoI" firstAttribute="leading" secondItem="LU4-kR-4fA" secondAttribute="leading" constant="20" id="Q1p-si-gvS"/>
                             <constraint firstItem="ySL-rs-3M6" firstAttribute="top" secondItem="oU8-Ug-yPR" secondAttribute="top" id="Ye3-nj-0JE"/>
-                            <constraint firstItem="Y6f-po-NoI" firstAttribute="top" secondItem="ySL-rs-3M6" secondAttribute="bottom" constant="20" id="g9Z-s8-k1N"/>
                             <constraint firstItem="ySL-rs-3M6" firstAttribute="leading" secondItem="LU4-kR-4fA" secondAttribute="leading" constant="20" id="ijx-dZ-eCe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LU4-kR-4fA"/>
@@ -160,10 +160,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="604"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n0i-gu-for">
-                                <rect key="frame" x="20" y="220" width="374" height="400"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="textView" textAlignment="justified" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n0i-gu-for">
+                                <rect key="frame" x="20" y="220" width="374" height="300"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="HUC-HM-FrF"/>
+                                    <constraint firstAttribute="height" constant="300" id="raJ-lj-15W"/>
                                 </constraints>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -178,12 +178,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="n0i-gu-for" firstAttribute="leading" secondItem="m06-2K-xxw" secondAttribute="leading" constant="20" id="Cbb-TU-HjO"/>
                             <constraint firstItem="m06-2K-xxw" firstAttribute="trailing" secondItem="O18-ZN-cUg" secondAttribute="trailing" constant="20" id="LCI-pB-mWP"/>
-                            <constraint firstItem="m06-2K-xxw" firstAttribute="trailing" secondItem="n0i-gu-for" secondAttribute="trailing" constant="20" id="WVJ-hq-0xO"/>
+                            <constraint firstItem="n0i-gu-for" firstAttribute="top" secondItem="O18-ZN-cUg" secondAttribute="bottom" constant="20" id="bTF-Xi-haC"/>
+                            <constraint firstItem="m06-2K-xxw" firstAttribute="trailing" secondItem="n0i-gu-for" secondAttribute="trailing" constant="20" id="boU-Cs-2o3"/>
                             <constraint firstItem="O18-ZN-cUg" firstAttribute="leading" secondItem="m06-2K-xxw" secondAttribute="leading" constant="20" id="dGd-QP-Bwu"/>
                             <constraint firstItem="O18-ZN-cUg" firstAttribute="top" secondItem="5RI-Zj-PP4" secondAttribute="top" id="iQd-ve-Nck"/>
-                            <constraint firstItem="n0i-gu-for" firstAttribute="top" secondItem="O18-ZN-cUg" secondAttribute="bottom" constant="20" id="qmL-Vy-gbb"/>
+                            <constraint firstItem="n0i-gu-for" firstAttribute="leading" secondItem="m06-2K-xxw" secondAttribute="leading" constant="20" id="zR5-mb-myv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="m06-2K-xxw"/>
                     </view>

@@ -115,30 +115,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="610"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Sfs-dc-svk">
-                                <rect key="frame" x="20" y="0.0" width="374" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">The Golden Triangle rule is a rule of thumb in visual composition for photographs or paintings, especially those which have elements that follow diagonal lines.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GoldenTriangleOV" translatesAutoresizingMaskIntoConstraints="NO" id="D8c-7c-XQH">
-                                <rect key="frame" x="20" y="84" width="374" height="212"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GoldenTriangleOV" translatesAutoresizingMaskIntoConstraints="NO" id="D8c-7c-XQH">
+                                <rect key="frame" x="20" y="0.0" width="374" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Laq-l7-ChM"/>
+                                </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Jq7-cV-dhd">
-                                <rect key="frame" x="20" y="321" width="374" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">The frame is divided into four triangles of two different sizes, done by drawing one diagonal from one corner to another, and then two lines from the other corners, touching the first at 90 degree angles.</string>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="textView" textAlignment="justified" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sfs-dc-svk">
+                                <rect key="frame" x="20" y="220" width="374" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="cgv-2x-0Vb"/>
+                                </constraints>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="D8c-7c-XQH" firstAttribute="top" secondItem="KUD-7F-GSZ" secondAttribute="top" id="0X3-bL-Zch"/>
+                            <constraint firstItem="bYd-rW-egO" firstAttribute="trailing" secondItem="Sfs-dc-svk" secondAttribute="trailing" constant="20" id="APK-NL-8l9"/>
+                            <constraint firstItem="D8c-7c-XQH" firstAttribute="leading" secondItem="bYd-rW-egO" secondAttribute="leading" constant="20" id="L2I-o3-5Cz"/>
+                            <constraint firstItem="bYd-rW-egO" firstAttribute="trailing" secondItem="D8c-7c-XQH" secondAttribute="trailing" constant="20" id="V41-11-9sS"/>
+                            <constraint firstItem="Sfs-dc-svk" firstAttribute="top" secondItem="D8c-7c-XQH" secondAttribute="bottom" constant="20" id="kDa-W4-PVe"/>
+                            <constraint firstItem="Sfs-dc-svk" firstAttribute="leading" secondItem="bYd-rW-egO" secondAttribute="leading" constant="20" id="oGL-lw-Sck"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bYd-rW-egO"/>
                     </view>
+                    <connections>
+                        <outlet property="txtDef" destination="Sfs-dc-svk" id="SGX-jJ-tGM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fcz-WM-IiV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -152,34 +158,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="604"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="1. Filling one of the triangles with the  subject" translatesAutoresizingMaskIntoConstraints="NO" id="LLz-Kd-RAI">
-                                <rect key="frame" x="20" y="0.0" width="374" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="textView" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SDp-hd-Puz">
+                                <rect key="frame" x="20" y="220" width="374" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="tqv-m6-mii"/>
+                                </constraints>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GTHow1" translatesAutoresizingMaskIntoConstraints="NO" id="Wbe-SO-FLX">
-                                <rect key="frame" x="20" y="45" width="374" height="179"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDp-hd-Puz">
-                                <rect key="frame" x="20" y="242" width="374" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">2. Placing the diagonal elements so that they  run along two of the lines
-</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GTHow2" translatesAutoresizingMaskIntoConstraints="NO" id="qYH-6F-vOD">
-                                <rect key="frame" x="20" y="311" width="374" height="186"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GTHow1" translatesAutoresizingMaskIntoConstraints="NO" id="Wbe-SO-FLX">
+                                <rect key="frame" x="20" y="0.0" width="374" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="CSg-Fq-abZ"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Wbe-SO-FLX" firstAttribute="top" secondItem="sOK-NW-6pc" secondAttribute="top" id="Pn3-XX-EJV"/>
+                            <constraint firstItem="SDp-hd-Puz" firstAttribute="top" secondItem="Wbe-SO-FLX" secondAttribute="bottom" constant="20" id="V0l-5g-VKt"/>
+                            <constraint firstItem="Wbe-SO-FLX" firstAttribute="leading" secondItem="SDc-2j-0NQ" secondAttribute="leading" constant="20" id="crt-IG-gI2"/>
+                            <constraint firstItem="SDc-2j-0NQ" firstAttribute="trailing" secondItem="SDp-hd-Puz" secondAttribute="trailing" constant="20" id="in3-PH-HTL"/>
+                            <constraint firstItem="SDp-hd-Puz" firstAttribute="leading" secondItem="SDc-2j-0NQ" secondAttribute="leading" constant="20" id="nUi-hK-xTf"/>
+                            <constraint firstItem="SDc-2j-0NQ" firstAttribute="trailing" secondItem="Wbe-SO-FLX" secondAttribute="trailing" constant="20" id="xOz-aW-MAn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="SDc-2j-0NQ"/>
                     </view>
+                    <connections>
+                        <outlet property="txtHow" destination="SDp-hd-Puz" id="fGx-cE-blb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="He3-xu-jPn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -235,7 +243,6 @@
         <image name="6" width="236" height="157"/>
         <image name="7" width="1023" height="684"/>
         <image name="GTHow1" width="238" height="164"/>
-        <image name="GTHow2" width="238" height="164"/>
         <image name="GoldenTriangleOV" width="270" height="180"/>
     </resources>
 </document>

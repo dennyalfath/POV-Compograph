@@ -115,30 +115,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="610"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Tcq-R4-62x">
-                                <rect key="frame" x="20" y="0.0" width="374" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Fibonacci Spiral also called as Golden Spiral is built from a series of squares that are based on the Fibonacci numbers. The length of every square is a Fibonacci number.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FsOV" translatesAutoresizingMaskIntoConstraints="NO" id="6BK-9B-N0g">
-                                <rect key="frame" x="20" y="110" width="374" height="212"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FsOV" translatesAutoresizingMaskIntoConstraints="NO" id="6BK-9B-N0g">
+                                <rect key="frame" x="20" y="0.0" width="374" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="fMB-38-Aa8"/>
+                                </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="iYh-3x-KfN">
-                                <rect key="frame" x="20" y="347" width="374" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">This is a pattern that appears everywhere in nature and resembles the shell of a nautilus. The curve flows through the frame and leads your eye around the picture.</string>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0tf-dp-3fQ">
+                                <rect key="frame" x="20" y="220" width="374" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Mia-rv-gq6"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6BK-9B-N0g" firstAttribute="top" secondItem="sFD-52-52B" secondAttribute="top" id="3gh-C9-uk1"/>
+                            <constraint firstItem="0tf-dp-3fQ" firstAttribute="top" secondItem="6BK-9B-N0g" secondAttribute="bottom" constant="20" id="BCf-Fr-qjl"/>
+                            <constraint firstItem="UXb-xC-hJz" firstAttribute="trailing" secondItem="6BK-9B-N0g" secondAttribute="trailing" constant="20" id="N9v-VS-TYi"/>
+                            <constraint firstItem="6BK-9B-N0g" firstAttribute="leading" secondItem="UXb-xC-hJz" secondAttribute="leading" constant="20" id="NAr-9y-DPO"/>
+                            <constraint firstItem="UXb-xC-hJz" firstAttribute="trailing" secondItem="0tf-dp-3fQ" secondAttribute="trailing" constant="20" id="cyW-jh-GEJ"/>
+                            <constraint firstItem="0tf-dp-3fQ" firstAttribute="leading" secondItem="UXb-xC-hJz" secondAttribute="leading" constant="20" id="j4l-Aw-arq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="UXb-xC-hJz"/>
                     </view>
+                    <connections>
+                        <outlet property="txtDef" destination="0tf-dp-3fQ" id="rOO-cM-4Oq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sqf-H2-wJK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -152,38 +160,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="604"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="n2q-a1-igW">
-                                <rect key="frame" x="20" y="0.0" width="374" height="88"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">1. Take a look at the image of the spiral again. Its base – the smallest quadrangle – should be the area of your frame with greatest detail. Ideally, the rest of the object should be placed within the spiral.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fs2" translatesAutoresizingMaskIntoConstraints="NO" id="NV8-2c-nng">
-                                <rect key="frame" x="20" y="96" width="374" height="179"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fs2" translatesAutoresizingMaskIntoConstraints="NO" id="NV8-2c-nng">
+                                <rect key="frame" x="20" y="0.0" width="374" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="z3w-4D-nA7"/>
+                                </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="tPp-64-u3u">
-                                <rect key="frame" x="20" y="296" width="374" height="177"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text" base64-UTF8="YES">
-Mi4gTWluZCB0aGF0IHRoZSBjZW50ZXIgb2YgdGhlIHNwaXJhbCBuZWVkIG5vdCBiZSBpbiB0aGUgbG93
-ZXIgcmlnaHQgY29ybmVyLiBJdCBjYW4gYmUgYW55d2hlcmUgaW4gdGhlIGZyYW1lLCBkZXBlbmRpbmcg
-b24geW91ciBvYmplY3Qu4oCoCjMuIFNob290IHlvdXIgb2JqZWN0IGluIHN1Y2ggYSB3YXkgdGhhdCBp
-dHMgY3VydmVzIGZvbGxvdyB0aGUgY3VydmVzIG9mIGFuIGltYWdpbmFyeSBnb2xkZW4gc3BpcmFsLiBU
-aGlzIHdheSB0aGUgZXllIG9mIHRoZSB2aWV3ZXIgd2lsbCBnbyBzdHJhaWdodCB0byB0aGUgb2JqZWN0
-IG9mIGludGVyZXN0IGFuZCBmb2xsb3cgaXRzIG5hdHVyYWwgZXhwYW5zaW9uIHdpdGhpbiB0aGUgZnJh
-bWUuDAo
-</string>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="textView" textAlignment="justified" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n2q-a1-igW">
+                                <rect key="frame" x="20" y="220" width="374" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="TC6-Np-drK"/>
+                                </constraints>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="NV8-2c-nng" firstAttribute="leading" secondItem="Oii-RN-hfR" secondAttribute="leading" constant="20" id="LKT-KI-ZhS"/>
+                            <constraint firstItem="Oii-RN-hfR" firstAttribute="trailing" secondItem="n2q-a1-igW" secondAttribute="trailing" constant="20" id="MTM-Yo-9aU"/>
+                            <constraint firstItem="NV8-2c-nng" firstAttribute="top" secondItem="d4k-kv-PNp" secondAttribute="top" id="drO-rF-p7r"/>
+                            <constraint firstItem="n2q-a1-igW" firstAttribute="leading" secondItem="Oii-RN-hfR" secondAttribute="leading" constant="20" id="hVC-RG-IQ8"/>
+                            <constraint firstItem="n2q-a1-igW" firstAttribute="top" secondItem="NV8-2c-nng" secondAttribute="bottom" constant="20" id="iTk-Aq-Plv"/>
+                            <constraint firstItem="Oii-RN-hfR" firstAttribute="trailing" secondItem="NV8-2c-nng" secondAttribute="trailing" constant="20" id="ijZ-yn-CIi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Oii-RN-hfR"/>
                     </view>
+                    <connections>
+                        <outlet property="txtHow" destination="n2q-a1-igW" id="4ko-oV-U66"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OYD-VI-lcu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

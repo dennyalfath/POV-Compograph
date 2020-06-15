@@ -1,21 +1,21 @@
 //
-//  GTHowVC.swift
+//  DRDefVC.swift
 //  POV-CameraApp
 //
-//  Created by Denny Alfath on 26/05/20.
+//  Created by Denny Alfath on 16/06/20.
 //  Copyright © 2020 Denny Alfath. All rights reserved.
 //
 
 import UIKit
 
-class GTHowVC: UIViewController {
+class DRDefVC: UIViewController {
 
-    @IBOutlet weak var txtHow: UITextView!
+    @IBOutlet weak var txtDef: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        txtHow.text = "1. Filling one of the triangles with the  subject  2. Placing the diagonal elements so that they  run along two of the lines"
+        txtDef.text = "In diagonal rule composition, the elements in the image are organised based on diagonal line. Such composition can emphasise perspective, give the image sense of depth, and also add dynamism."
     }
     
 

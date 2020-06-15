@@ -1,21 +1,21 @@
 //
-//  GTHowVC.swift
+//  PGDefVC.swift
 //  POV-CameraApp
 //
-//  Created by Denny Alfath on 26/05/20.
+//  Created by Denny Alfath on 16/06/20.
 //  Copyright © 2020 Denny Alfath. All rights reserved.
 //
 
 import UIKit
 
-class GTHowVC: UIViewController {
+class PGDefVC: UIViewController {
 
-    @IBOutlet weak var txtHow: UITextView!
+    @IBOutlet weak var txtDef: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        txtHow.text = "1. Filling one of the triangles with the  subject  2. Placing the diagonal elements so that they  run along two of the lines"
+        txtDef.text = "What you can see when using the Phi Grid is in the spaces where gridlines intersect. These so-called “sweet spots” are places where the eye is naturally drawn in an image. Cropping or aligning an image so that key parts fall in these areas will create focus and harmony."
     }
     
 
