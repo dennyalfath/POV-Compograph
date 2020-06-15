@@ -95,6 +95,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="06h-s7-Q6a"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="Golden Triangle" id="ZG2-SB-pQJ"/>
                     <connections>
                         <outlet property="defVC" destination="6Li-cF-3WY" id="oiN-rr-UqA"/>
@@ -115,50 +116,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="610"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Coq-iH-RPz">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="610"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="awh-Ut-dPY">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="610"/>
-                                        <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZOu-UQ-WLV">
-                                                <rect key="frame" x="8" y="0.0" width="398" height="250"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                    </view>
-                                </subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ROSOV" translatesAutoresizingMaskIntoConstraints="NO" id="QVu-ex-VEG">
+                                <rect key="frame" x="20" y="0.0" width="374" height="200"/>
                                 <constraints>
-                                    <constraint firstItem="awh-Ut-dPY" firstAttribute="top" secondItem="azo-oo-3iw" secondAttribute="top" id="ENq-QA-ps7"/>
-                                    <constraint firstItem="awh-Ut-dPY" firstAttribute="bottom" secondItem="azo-oo-3iw" secondAttribute="bottom" id="F45-Sg-QOt"/>
-                                    <constraint firstItem="awh-Ut-dPY" firstAttribute="trailing" secondItem="xlO-Vn-7BQ" secondAttribute="trailing" id="Ng3-7a-8xa"/>
-                                    <constraint firstItem="awh-Ut-dPY" firstAttribute="bottom" secondItem="xlO-Vn-7BQ" secondAttribute="bottom" id="XTm-CO-Hkt"/>
-                                    <constraint firstItem="awh-Ut-dPY" firstAttribute="leading" secondItem="azo-oo-3iw" secondAttribute="leading" id="ZiC-l6-XHA"/>
-                                    <constraint firstItem="awh-Ut-dPY" firstAttribute="leading" secondItem="xlO-Vn-7BQ" secondAttribute="leading" id="bbk-GH-yxm"/>
-                                    <constraint firstItem="awh-Ut-dPY" firstAttribute="trailing" secondItem="azo-oo-3iw" secondAttribute="trailing" id="fBt-zi-CVv"/>
-                                    <constraint firstItem="awh-Ut-dPY" firstAttribute="top" secondItem="xlO-Vn-7BQ" secondAttribute="top" id="kX7-CD-bQy"/>
-                                    <constraint firstItem="awh-Ut-dPY" firstAttribute="width" secondItem="xlO-Vn-7BQ" secondAttribute="width" id="raZ-87-0hP"/>
+                                    <constraint firstAttribute="height" constant="200" id="NbG-ta-nN8"/>
                                 </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="xlO-Vn-7BQ"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="azo-oo-3iw"/>
-                            </scrollView>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="htK-YL-nO9">
+                                <rect key="frame" x="20" y="220" width="374" height="400"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="TWW-BL-B5Z"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Coq-iH-RPz" firstAttribute="trailing" secondItem="7bj-AV-CH1" secondAttribute="trailing" id="3nM-ij-o1u"/>
-                            <constraint firstItem="Coq-iH-RPz" firstAttribute="leading" secondItem="7bj-AV-CH1" secondAttribute="leading" id="4MA-Bm-A1A"/>
-                            <constraint firstItem="Coq-iH-RPz" firstAttribute="top" secondItem="Rnd-GR-GsU" secondAttribute="top" id="8mt-gh-0y2"/>
-                            <constraint firstItem="Coq-iH-RPz" firstAttribute="bottom" secondItem="7bj-AV-CH1" secondAttribute="bottom" id="C1J-6D-zxf"/>
+                            <constraint firstItem="QVu-ex-VEG" firstAttribute="top" secondItem="Rnd-GR-GsU" secondAttribute="top" id="3rZ-5a-ui0"/>
+                            <constraint firstItem="yBH-m0-xJH" firstAttribute="trailing" secondItem="htK-YL-nO9" secondAttribute="trailing" constant="20" id="D3d-bk-grr"/>
+                            <constraint firstItem="htK-YL-nO9" firstAttribute="leading" secondItem="yBH-m0-xJH" secondAttribute="leading" constant="20" id="Jo7-zc-Vfl"/>
+                            <constraint firstItem="QVu-ex-VEG" firstAttribute="leading" secondItem="yBH-m0-xJH" secondAttribute="leading" constant="20" id="W4i-zl-ypo"/>
+                            <constraint firstItem="yBH-m0-xJH" firstAttribute="trailing" secondItem="QVu-ex-VEG" secondAttribute="trailing" constant="20" id="a2N-J7-Lco"/>
+                            <constraint firstItem="htK-YL-nO9" firstAttribute="top" secondItem="QVu-ex-VEG" secondAttribute="bottom" constant="20" id="tc4-pa-hsr"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="7bj-AV-CH1"/>
+                        <viewLayoutGuide key="safeArea" id="yBH-m0-xJH"/>
                     </view>
                     <connections>
-                        <outlet property="txtDef" destination="ZOu-UQ-WLV" id="wQZ-sJ-lb1"/>
+                        <outlet property="txtDef" destination="htK-YL-nO9" id="Kj0-oL-bSg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eyk-Kg-Y9x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -244,5 +232,6 @@
         <image name="ROS3" width="170" height="256"/>
         <image name="ROS4" width="256" height="192"/>
         <image name="ROS5" width="205" height="256"/>
+        <image name="ROSOV" width="256" height="187"/>
     </resources>
 </document>
