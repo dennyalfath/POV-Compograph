@@ -17,6 +17,14 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet weak var ShowGridButton: UIButton!                   // Grid on/off button       (Style)
     @IBOutlet weak var bottomView: UIView!                         // Bottom View              (Style)
     @IBOutlet weak var gridPicker: UIPickerView!                   // Grid Picker Controller   (Style)
+    @IBOutlet weak var cameraButtonTappedIndicator: UIView!
+    @IBOutlet weak var LastImageView: UIButton!
+    @IBOutlet weak var showRecentPhotoBackground: UIView!
+    @IBOutlet weak var RecentPhoto: UIImageView!
+    @IBOutlet weak var CloseRecentPhoto: UIButton!
+    
+    
+    
     
     //Variable for Camera Screen
     var captureSession = AVCaptureSession()
@@ -179,7 +187,30 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         }
     }
     
+    
+    
+    @IBAction func showRecentImageButtonTapped(_ sender: Any) {
+        
+        showRecentPhotoBackground.layer.opacity = 1
+        RecentPhoto.layer.opacity = 1
+        CloseRecentPhoto.layer.opacity = 1
+        
+    }
+    
+    
+    @IBAction func RecentPhotoBackButtonTapped(_ sender: Any) {
+        
+        showRecentPhotoBackground.layer.opacity = 0
+        RecentPhoto.layer.opacity = 0
+        CloseRecentPhoto.layer.opacity = 0
+        
+    }
+    
 }
+
+
+
+
 
 extension ViewController : AVCapturePhotoCaptureDelegate
 {
@@ -199,7 +230,20 @@ func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photoS
                         if let image = capturedImage {
                             UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
                         }
-                    }
-}
+    
+    print(imageData)
+    
+                        ifCameraButtonTapped()
+    
+    
+                        var images: UIImage = UIImage(data: imageData)!
+    
+                        var imagex: UIImage = images as UIImage
+                        LastImageView.setImage(imagex, for: .normal)
+    
+                        RecentPhoto.image = UIImage(data: imageData)!
+    
+    }
 
+}
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -65,6 +65,9 @@
                                             <constraint firstAttribute="width" constant="44" id="F2n-FZ-slz"/>
                                         </constraints>
                                         <state key="normal" image="PhotoLibrary"/>
+                                        <connections>
+                                            <action selector="showRecentImageButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Cg-hG-JUK"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.25420055650684931" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -112,36 +115,74 @@
                                     <segue destination="fh2-Me-rAV" kind="modal" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="eI9-3I-yrZ"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lay-CB-4HI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xlU-ss-X3e">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h0o-Ky-Itc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBd-gH-21F">
+                                <rect key="frame" x="15" y="49" width="52" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="RecentPhotoBackButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zx1-G0-AHg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="h0o-Ky-Itc" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="0oX-qE-TSF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h0o-Ky-Itc" secondAttribute="trailing" id="4B1-ud-hdw"/>
                             <constraint firstItem="gLQ-ps-KlM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6BC-zP-Je4"/>
                             <constraint firstItem="gLQ-ps-KlM" firstAttribute="top" secondItem="J7T-Ej-cFV" secondAttribute="bottom" id="9JJ-di-bYk"/>
                             <constraint firstItem="RhS-Yz-86X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Amd-fi-xEr"/>
+                            <constraint firstAttribute="bottom" secondItem="xlU-ss-X3e" secondAttribute="bottom" id="Bjg-iP-gia"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J7T-Ej-cFV" secondAttribute="trailing" constant="26" id="C9G-y3-DrD"/>
                             <constraint firstAttribute="trailing" secondItem="RhS-Yz-86X" secondAttribute="trailing" id="D4S-s6-jNK"/>
                             <constraint firstAttribute="bottom" secondItem="cup-VV-alR" secondAttribute="bottom" id="Jbp-cc-U64"/>
+                            <constraint firstItem="Lay-CB-4HI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KPa-Wu-NV2"/>
                             <constraint firstAttribute="trailing" secondItem="YYJ-cs-Rp9" secondAttribute="trailing" id="LgP-Pw-RlW"/>
                             <constraint firstAttribute="trailing" secondItem="cup-VV-alR" secondAttribute="trailing" id="MiI-41-JxO"/>
                             <constraint firstItem="gLQ-ps-KlM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NXd-eT-e1P"/>
                             <constraint firstAttribute="trailing" secondItem="gLQ-ps-KlM" secondAttribute="trailing" id="NYg-I7-8K8"/>
                             <constraint firstItem="YYJ-cs-Rp9" firstAttribute="top" secondItem="gLQ-ps-KlM" secondAttribute="bottom" id="Nrw-84-AvH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YYJ-cs-Rp9" secondAttribute="bottom" constant="45" id="Pe2-gG-WHu"/>
+                            <constraint firstItem="xlU-ss-X3e" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RXo-er-sjb"/>
                             <constraint firstItem="gLQ-ps-KlM" firstAttribute="top" secondItem="wzZ-vk-pUz" secondAttribute="bottom" id="TPU-Re-UVX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="h0o-Ky-Itc" secondAttribute="bottom" id="Tyh-vB-IxB"/>
+                            <constraint firstItem="xlU-ss-X3e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="U2Q-u0-Jl8"/>
                             <constraint firstItem="cup-VV-alR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="UiL-CQ-8Ec"/>
                             <constraint firstItem="RhS-Yz-86X" firstAttribute="top" secondItem="wzZ-vk-pUz" secondAttribute="bottom" id="Vjd-ki-AcT"/>
                             <constraint firstItem="cup-VV-alR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WYr-04-GyV"/>
+                            <constraint firstItem="xlU-ss-X3e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XEc-u4-L3C"/>
                             <constraint firstItem="rRh-dE-1f6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-7" id="Xe2-ZZ-GV6"/>
                             <constraint firstItem="cup-VV-alR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Xu2-vJ-Tew"/>
+                            <constraint firstItem="zBd-gH-21F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="YbE-qR-q88"/>
+                            <constraint firstItem="h0o-Ky-Itc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Z20-4F-l1J"/>
+                            <constraint firstItem="h0o-Ky-Itc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Z83-5C-LoJ"/>
                             <constraint firstItem="J7T-Ej-cFV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-10" id="ZIB-LA-cEq"/>
                             <constraint firstItem="J7T-Ej-cFV" firstAttribute="leading" secondItem="wzZ-vk-pUz" secondAttribute="trailing" constant="2" id="ZmX-m2-3EI"/>
                             <constraint firstItem="RhS-Yz-86X" firstAttribute="top" secondItem="J7T-Ej-cFV" secondAttribute="bottom" id="bOE-Z9-pED"/>
+                            <constraint firstItem="xlU-ss-X3e" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bQJ-e2-7CY"/>
+                            <constraint firstAttribute="bottom" secondItem="Lay-CB-4HI" secondAttribute="bottom" id="bRV-Uc-szP"/>
                             <constraint firstItem="YYJ-cs-Rp9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cXQ-4v-szw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RhS-Yz-86X" secondAttribute="bottom" constant="45" id="hcL-bK-kWW"/>
+                            <constraint firstItem="h0o-Ky-Itc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="j9b-F4-5wV"/>
                             <constraint firstItem="cup-VV-alR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="k8r-r1-9B1"/>
                             <constraint firstAttribute="bottom" secondItem="cup-VV-alR" secondAttribute="bottom" id="kP0-Q1-stu"/>
+                            <constraint firstAttribute="trailing" secondItem="Lay-CB-4HI" secondAttribute="trailing" id="oSS-d9-5Ab"/>
                             <constraint firstItem="rRh-dE-1f6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="puV-Q7-ira"/>
+                            <constraint firstItem="zBd-gH-21F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="sxC-Zb-NgO"/>
+                            <constraint firstAttribute="trailing" secondItem="xlU-ss-X3e" secondAttribute="trailing" id="tzC-hM-Nxm"/>
+                            <constraint firstItem="Lay-CB-4HI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vPV-RK-GOP"/>
                             <constraint firstItem="cup-VV-alR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yg8-bR-HbC"/>
                             <constraint firstItem="YYJ-cs-Rp9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="z8W-qT-FOc"/>
                             <constraint firstItem="RhS-Yz-86X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zIC-RP-wPj"/>
@@ -154,12 +195,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="lza-Cn-iYJ"/>
                     <connections>
+                        <outlet property="CloseRecentPhoto" destination="zBd-gH-21F" id="QG8-0Z-aLf"/>
+                        <outlet property="LastImageView" destination="1oe-Sz-201" id="wx4-9d-zMg"/>
+                        <outlet property="RecentPhoto" destination="h0o-Ky-Itc" id="6Ge-NW-2xx"/>
                         <outlet property="ShowGridButton" destination="rRh-dE-1f6" id="gWq-W3-kcv"/>
                         <outlet property="bottomView" destination="YYJ-cs-Rp9" id="W6o-gE-WMB"/>
                         <outlet property="cameraButton" destination="ie6-7C-0bA" id="Ivd-b5-h0g"/>
+                        <outlet property="cameraButtonTappedIndicator" destination="Lay-CB-4HI" id="A5M-t7-mtE"/>
                         <outlet property="cameraView" destination="cup-VV-alR" id="aFO-ng-aYh"/>
                         <outlet property="gridInUsed" destination="RhS-Yz-86X" id="Lqg-Y0-CaO"/>
                         <outlet property="gridPicker" destination="3Ht-cB-fbE" id="t4H-Ll-oOL"/>
+                        <outlet property="showRecentPhotoBackground" destination="xlU-ss-X3e" id="Bfj-DH-PEB"/>
                         <segue destination="VMz-rC-qDv" kind="show" identifier="DR" id="XKI-QZ-MBo"/>
                         <segue destination="gB2-gm-cDb" kind="show" identifier="RoS" id="CNq-Yf-rXV"/>
                         <segue destination="wEG-M0-2hZ" kind="show" identifier="TPG" id="dHR-L1-qr7"/>

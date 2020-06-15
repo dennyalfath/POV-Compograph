@@ -23,6 +23,10 @@ extension ViewController {
         let y = gridPicker.frame.origin.y                                           // Declare Picker View (Y) Position
         gridPicker.transform = CGAffineTransform(rotationAngle: rotationAngle)      // Rotating Picker View 90°
         gridPicker.frame = CGRect(x: -400, y: y + 5, width: view.frame.width + 800, height: 20) // Picker View Position and Size
+        cameraButtonTappedIndicator.layer.opacity = 0
+        showRecentPhotoBackground.layer.opacity = 0
+        RecentPhoto.layer.opacity = 0
+        CloseRecentPhoto.layer.opacity = 0
     }
     
     // Grid Color Reset all value to 0
@@ -266,4 +270,47 @@ extension ViewController {
             self.performSegue(withIdentifier: "RoS", sender: self)
         }
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    func ifCameraButtonTapped() {
+        // This will animate your final state
+        UIView.animate(withDuration: 0.5) { // In 2 seconds animation
+            
+            // Change the background color to blue
+            self.cameraButtonTappedIndicator.layer.opacity = 1
+        }
+        
+        UIView.animate(withDuration: 0.5) { // In 2 seconds animation
+            
+            // Change the background color to blue
+            self.cameraButtonTappedIndicator.layer.opacity = 0
+        }
+    }
+    
+    
+    
+    
+    
+    
 }
+
