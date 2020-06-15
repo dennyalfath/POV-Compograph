@@ -29,6 +29,8 @@
 		248857E8247E201700295B9C /* FSExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248857E7247E201700295B9C /* FSExampleVC.swift */; };
 		248857ED247E28B500295B9C /* RuleOfThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248857EC247E28B500295B9C /* RuleOfThirdVC.swift */; };
 		248F5D972497D9B1002D0E2C /* ROSDefinitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248F5D962497D9B1002D0E2C /* ROSDefinitionVC.swift */; };
+		24B2A8F424980EA9007E6EF6 /* ROTDefinitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B2A8F324980EA9007E6EF6 /* ROTDefinitionVC.swift */; };
+		24B2A8F624981030007E6EF6 /* ROTHowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B2A8F524981030007E6EF6 /* ROTHowVC.swift */; };
 		F286598224852D17006F1522 /* GridUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F286598124852D17006F1522 /* GridUI.swift */; };
 		F2F91CFB24853E9A000BAEA4 /* DiagonalRule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F91CF924853E9A000BAEA4 /* DiagonalRule.storyboard */; };
 		F2F91CFD24854036000BAEA4 /* ThePhiGrid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F91CFC24854036000BAEA4 /* ThePhiGrid.storyboard */; };
@@ -83,6 +85,8 @@
 		248857E7247E201700295B9C /* FSExampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSExampleVC.swift; sourceTree = "<group>"; };
 		248857EC247E28B500295B9C /* RuleOfThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleOfThirdVC.swift; sourceTree = "<group>"; };
 		248F5D962497D9B1002D0E2C /* ROSDefinitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROSDefinitionVC.swift; sourceTree = "<group>"; };
+		24B2A8F324980EA9007E6EF6 /* ROTDefinitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROTDefinitionVC.swift; sourceTree = "<group>"; };
+		24B2A8F524981030007E6EF6 /* ROTHowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROTHowVC.swift; sourceTree = "<group>"; };
 		F286598124852D17006F1522 /* GridUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridUI.swift; sourceTree = "<group>"; };
 		F2F91CFA24853E9A000BAEA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "POV-CameraApp/Base.lproj/DiagonalRule.storyboard"; sourceTree = "<group>"; };
 		F2F91CFC24854036000BAEA4 /* ThePhiGrid.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ThePhiGrid.storyboard; sourceTree = "<group>"; };
@@ -220,6 +224,8 @@
 			children = (
 				F2F91CFE248542B5000BAEA4 /* RuleOfThird.storyboard */,
 				248857EC247E28B500295B9C /* RuleOfThirdVC.swift */,
+				24B2A8F324980EA9007E6EF6 /* ROTDefinitionVC.swift */,
+				24B2A8F524981030007E6EF6 /* ROTHowVC.swift */,
 			);
 			path = RuleOfThird;
 			sourceTree = "<group>";
@@ -385,9 +391,11 @@
 				248857E6247E200800295B9C /* FSHowVC.swift in Sources */,
 				248857E2247E1C4600295B9C /* FibonacciSpiralVC.swift in Sources */,
 				248857ED247E28B500295B9C /* RuleOfThirdVC.swift in Sources */,
+				24B2A8F624981030007E6EF6 /* ROTHowVC.swift in Sources */,
 				241B7E4E246E3B1C00267E6B /* GoldenTriangleVC.swift in Sources */,
 				248857E4247E1FF500295B9C /* FSDefinitionVC.swift in Sources */,
 				246E39F0247F73B400A85109 /* DiagonalRuleVC.swift in Sources */,
+				24B2A8F424980EA9007E6EF6 /* ROTDefinitionVC.swift in Sources */,
 				244C997324684995009E5355 /* AppDelegate.swift in Sources */,
 				244C997524684995009E5355 /* SceneDelegate.swift in Sources */,
 			);
