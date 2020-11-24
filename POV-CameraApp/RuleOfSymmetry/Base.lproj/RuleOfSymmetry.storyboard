@@ -17,6 +17,9 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ROS4" translatesAutoresizingMaskIntoConstraints="NO" id="SKA-Xj-krV">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="215"/>
+                                <accessibility key="accessibilityConfiguration" label="Image of book">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="215" id="SA5-np-XWO"/>
                                 </constraints>
@@ -62,13 +65,10 @@
                                     <action selector="didTapSegment:" destination="6se-dK-JKY" eventType="valueChanged" id="nlK-va-bhy"/>
                                 </connections>
                             </segmentedControl>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Rule Of Symmetry" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cKt-2m-9fv">
-                                <rect key="frame" x="120" y="10" width="201" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="eRq-EC-Kwr"/>
-                                </constraints>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Rule Of Symmetry" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cKt-2m-9fv">
+                                <rect key="frame" x="40" y="10" width="334" height="196"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -76,22 +76,31 @@
                         <constraints>
                             <constraint firstItem="i6A-g6-wDo" firstAttribute="top" secondItem="SKA-Xj-krV" secondAttribute="bottom" constant="20" id="0OP-Vn-Svf"/>
                             <constraint firstItem="i6A-g6-wDo" firstAttribute="leading" secondItem="06h-s7-Q6a" secondAttribute="leading" constant="20" id="19J-w4-a6W"/>
-                            <constraint firstItem="cKt-2m-9fv" firstAttribute="top" secondItem="vtH-UE-FPp" secondAttribute="top" constant="10" id="1Cc-No-l9b"/>
                             <constraint firstItem="SKA-Xj-krV" firstAttribute="leading" secondItem="06h-s7-Q6a" secondAttribute="leading" id="32W-9c-8tN"/>
+                            <constraint firstItem="06h-s7-Q6a" firstAttribute="trailing" secondItem="cKt-2m-9fv" secondAttribute="trailing" constant="40" id="3vI-ck-Rl1"/>
                             <constraint firstItem="ADk-IZ-N0s" firstAttribute="trailing" secondItem="06h-s7-Q6a" secondAttribute="trailing" id="4IJ-0c-7oZ"/>
+                            <constraint firstItem="cKt-2m-9fv" firstAttribute="leading" secondItem="06h-s7-Q6a" secondAttribute="leading" constant="40" id="5ZB-FC-cdI"/>
+                            <constraint firstItem="cKt-2m-9fv" firstAttribute="leading" secondItem="06h-s7-Q6a" secondAttribute="leading" constant="40" id="7Hs-DT-5jm"/>
+                            <constraint firstItem="i6A-g6-wDo" firstAttribute="top" secondItem="cKt-2m-9fv" secondAttribute="bottom" constant="29" id="9l8-qN-N7X"/>
+                            <constraint firstItem="cKt-2m-9fv" firstAttribute="leading" secondItem="06h-s7-Q6a" secondAttribute="leading" constant="40" id="EoG-ED-XZI"/>
+                            <constraint firstItem="i6A-g6-wDo" firstAttribute="top" secondItem="cKt-2m-9fv" secondAttribute="bottom" constant="29" id="Fgc-TU-IOZ"/>
+                            <constraint firstItem="cKt-2m-9fv" firstAttribute="top" secondItem="vtH-UE-FPp" secondAttribute="top" constant="10" id="JWU-L3-NEI"/>
                             <constraint firstItem="zfg-Xu-1Tl" firstAttribute="trailing" secondItem="06h-s7-Q6a" secondAttribute="trailing" id="KIV-Qq-yn4"/>
+                            <constraint firstItem="06h-s7-Q6a" firstAttribute="trailing" secondItem="cKt-2m-9fv" secondAttribute="trailing" constant="40" id="QPp-6k-mzg"/>
                             <constraint firstItem="6Li-cF-3WY" firstAttribute="trailing" secondItem="06h-s7-Q6a" secondAttribute="trailing" id="Qb5-pQ-aT4"/>
                             <constraint firstItem="06h-s7-Q6a" firstAttribute="trailing" secondItem="i6A-g6-wDo" secondAttribute="trailing" constant="20" id="Xp6-xJ-mkh"/>
                             <constraint firstItem="SKA-Xj-krV" firstAttribute="trailing" secondItem="06h-s7-Q6a" secondAttribute="trailing" id="YHh-6X-UJj"/>
                             <constraint firstItem="ADk-IZ-N0s" firstAttribute="leading" secondItem="06h-s7-Q6a" secondAttribute="leading" id="YnI-SF-HB4"/>
-                            <constraint firstItem="cKt-2m-9fv" firstAttribute="leading" secondItem="06h-s7-Q6a" secondAttribute="leading" constant="120" id="fUw-Tr-7Kf"/>
-                            <constraint firstItem="06h-s7-Q6a" firstAttribute="trailing" secondItem="cKt-2m-9fv" secondAttribute="trailing" constant="93" id="gT0-k5-FQY"/>
+                            <constraint firstItem="cKt-2m-9fv" firstAttribute="top" secondItem="vtH-UE-FPp" secondAttribute="top" constant="10" id="Z08-jT-kR4"/>
+                            <constraint firstItem="i6A-g6-wDo" firstAttribute="top" secondItem="cKt-2m-9fv" secondAttribute="bottom" constant="29" id="dQ5-7H-zQg"/>
                             <constraint firstItem="SKA-Xj-krV" firstAttribute="top" secondItem="vtH-UE-FPp" secondAttribute="top" id="jBm-Ik-xFd"/>
                             <constraint firstItem="6Li-cF-3WY" firstAttribute="leading" secondItem="06h-s7-Q6a" secondAttribute="leading" id="nFa-to-Aso"/>
                             <constraint firstItem="zfg-Xu-1Tl" firstAttribute="leading" secondItem="06h-s7-Q6a" secondAttribute="leading" id="qrU-kM-0Ne"/>
                             <constraint firstItem="ADk-IZ-N0s" firstAttribute="top" secondItem="i6A-g6-wDo" secondAttribute="bottom" constant="20" id="rUY-4i-an8"/>
+                            <constraint firstItem="cKt-2m-9fv" firstAttribute="top" secondItem="vtH-UE-FPp" secondAttribute="top" constant="10" id="ssA-PL-tIK"/>
                             <constraint firstItem="zfg-Xu-1Tl" firstAttribute="top" secondItem="i6A-g6-wDo" secondAttribute="bottom" constant="20" id="toj-mJ-MdY"/>
                             <constraint firstItem="6Li-cF-3WY" firstAttribute="top" secondItem="i6A-g6-wDo" secondAttribute="bottom" constant="20" id="wwo-TE-eMk"/>
+                            <constraint firstItem="06h-s7-Q6a" firstAttribute="trailing" secondItem="cKt-2m-9fv" secondAttribute="trailing" constant="40" id="zpV-Pv-oi8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="06h-s7-Q6a"/>
                     </view>
@@ -118,6 +127,9 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ROSOV" translatesAutoresizingMaskIntoConstraints="NO" id="QVu-ex-VEG">
                                 <rect key="frame" x="20" y="0.0" width="374" height="200"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="3ta-ZF-EIb"/>
                                 </constraints>
@@ -162,6 +174,9 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ROS1" translatesAutoresizingMaskIntoConstraints="NO" id="joL-1Y-uRz">
                                 <rect key="frame" x="20" y="0.0" width="374" height="200"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="11j-x9-SAW"/>
                                 </constraints>
@@ -207,14 +222,23 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ROS1" translatesAutoresizingMaskIntoConstraints="NO" id="bsT-8h-HOo">
                                 <rect key="frame" x="20" y="17" width="175" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="photo of ceiling that is taken using rule of symmetry">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ROS4" translatesAutoresizingMaskIntoConstraints="NO" id="4Uo-Bo-tcb">
                                 <rect key="frame" x="213" y="17" width="181" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ROS2" translatesAutoresizingMaskIntoConstraints="NO" id="Hvs-yU-Zb9">
                                 <rect key="frame" x="20" y="148" width="374" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

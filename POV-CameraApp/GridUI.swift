@@ -294,13 +294,13 @@ extension ViewController {
     
     func ifCameraButtonTapped() {
         // This will animate your final state
-        UIView.animate(withDuration: 0.5) { // In 2 seconds animation
+        UIView.animate(withDuration: 1) { // In 2 seconds animation
             
             // Change the background color to blue
             self.cameraButtonTappedIndicator.layer.opacity = 1
         }
         
-        UIView.animate(withDuration: 0.5) { // In 2 seconds animation
+        UIView.animate(withDuration: 1) { // In 2 seconds animation
             
             // Change the background color to blue
             self.cameraButtonTappedIndicator.layer.opacity = 0

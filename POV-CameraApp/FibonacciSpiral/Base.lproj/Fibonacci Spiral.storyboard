@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -17,6 +17,9 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fs3" translatesAutoresizingMaskIntoConstraints="NO" id="gTQ-ng-wMa">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="215"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="215" id="GxV-88-Zrc"/>
                                 </constraints>
@@ -62,13 +65,10 @@
                                     <action selector="didTapSegment:" destination="Dd2-gv-EfH" eventType="valueChanged" id="rey-Ip-oqZ"/>
                                 </connections>
                             </segmentedControl>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Fibonacci Spiral" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qqy-F7-Rut">
-                                <rect key="frame" x="120" y="10" width="174" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="4ZS-JO-5xv"/>
-                                </constraints>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Fibonacci Spiral" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qqy-F7-Rut">
+                                <rect key="frame" x="40" y="10" width="334" height="196"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -79,19 +79,20 @@
                             <constraint firstItem="bgq-27-KDZ" firstAttribute="leading" secondItem="fOM-Ep-6ol" secondAttribute="leading" constant="20" id="43l-8U-3Kw"/>
                             <constraint firstItem="N4c-J2-yZg" firstAttribute="trailing" secondItem="fOM-Ep-6ol" secondAttribute="trailing" id="6md-Rk-hpM"/>
                             <constraint firstItem="d0w-vj-AJh" firstAttribute="leading" secondItem="fOM-Ep-6ol" secondAttribute="leading" id="6sV-CH-4OG"/>
+                            <constraint firstItem="qqy-F7-Rut" firstAttribute="leading" secondItem="fOM-Ep-6ol" secondAttribute="leading" constant="40" id="72h-sH-6YW"/>
                             <constraint firstItem="gTQ-ng-wMa" firstAttribute="top" secondItem="js0-bH-9dx" secondAttribute="top" id="7b5-wz-feU"/>
                             <constraint firstItem="i2w-hB-wOg" firstAttribute="trailing" secondItem="fOM-Ep-6ol" secondAttribute="trailing" id="93D-O7-hLV"/>
                             <constraint firstItem="bgq-27-KDZ" firstAttribute="top" secondItem="gTQ-ng-wMa" secondAttribute="bottom" constant="20" id="DTc-8A-FLg"/>
-                            <constraint firstItem="qqy-F7-Rut" firstAttribute="top" secondItem="js0-bH-9dx" secondAttribute="top" constant="10" id="PFx-kC-UQ9"/>
+                            <constraint firstItem="fOM-Ep-6ol" firstAttribute="trailing" secondItem="qqy-F7-Rut" secondAttribute="trailing" constant="40" id="Ljr-fe-m30"/>
+                            <constraint firstItem="qqy-F7-Rut" firstAttribute="top" secondItem="js0-bH-9dx" secondAttribute="top" constant="10" id="PRB-kG-JOf"/>
                             <constraint firstItem="gTQ-ng-wMa" firstAttribute="leading" secondItem="fOM-Ep-6ol" secondAttribute="leading" id="Q6R-uW-teZ"/>
                             <constraint firstItem="d0w-vj-AJh" firstAttribute="top" secondItem="bgq-27-KDZ" secondAttribute="bottom" constant="20" id="RTJ-YY-lrV"/>
                             <constraint firstItem="d0w-vj-AJh" firstAttribute="trailing" secondItem="fOM-Ep-6ol" secondAttribute="trailing" id="cQG-lC-d4H"/>
                             <constraint firstItem="i2w-hB-wOg" firstAttribute="leading" secondItem="fOM-Ep-6ol" secondAttribute="leading" id="ct1-7g-o5e"/>
-                            <constraint firstItem="fOM-Ep-6ol" firstAttribute="trailing" secondItem="qqy-F7-Rut" secondAttribute="trailing" constant="120" id="fDV-jm-ad8"/>
+                            <constraint firstItem="bgq-27-KDZ" firstAttribute="top" secondItem="qqy-F7-Rut" secondAttribute="bottom" constant="29" id="eUh-Fh-cbh"/>
                             <constraint firstItem="fOM-Ep-6ol" firstAttribute="trailing" secondItem="bgq-27-KDZ" secondAttribute="trailing" constant="20" id="fhB-xs-UHo"/>
                             <constraint firstItem="i2w-hB-wOg" firstAttribute="top" secondItem="bgq-27-KDZ" secondAttribute="bottom" constant="20" id="jek-Iz-r0r"/>
                             <constraint firstItem="N4c-J2-yZg" firstAttribute="leading" secondItem="fOM-Ep-6ol" secondAttribute="leading" id="lIG-ua-UEV"/>
-                            <constraint firstItem="qqy-F7-Rut" firstAttribute="leading" secondItem="fOM-Ep-6ol" secondAttribute="leading" constant="120" id="saC-9a-D0u"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fOM-Ep-6ol"/>
                     </view>
@@ -117,6 +118,9 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FsOV" translatesAutoresizingMaskIntoConstraints="NO" id="6BK-9B-N0g">
                                 <rect key="frame" x="20" y="0.0" width="374" height="200"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="fMB-38-Aa8"/>
                                 </constraints>
@@ -162,6 +166,9 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fs2" translatesAutoresizingMaskIntoConstraints="NO" id="NV8-2c-nng">
                                 <rect key="frame" x="20" y="0.0" width="374" height="200"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="z3w-4D-nA7"/>
                                 </constraints>
@@ -206,14 +213,23 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fs1" translatesAutoresizingMaskIntoConstraints="NO" id="qgr-OV-xW3">
                                 <rect key="frame" x="20" y="11" width="175" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fs2" translatesAutoresizingMaskIntoConstraints="NO" id="qgH-Hz-iWn">
                                 <rect key="frame" x="219" y="11" width="175" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fs3" translatesAutoresizingMaskIntoConstraints="NO" id="H4e-XP-OR0">
                                 <rect key="frame" x="20" y="147" width="373" height="239"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

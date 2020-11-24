@@ -25,7 +25,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     
     
-    
     //Variable for Camera Screen
     var captureSession = AVCaptureSession()
     var previewLayer = AVCaptureVideoPreviewLayer()
@@ -54,6 +53,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     var RoSColorCode = 0                                                      // Rule of Symmetry Color numbers
     var SwipeCode = 2                                                         // Tracking what grid is in use right now (Int)
     var rotationAngle: CGFloat!                                               // Value for rotating Picker View
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,6 +87,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         //Func for GridView
         InitialStyle()
     }
+    
 
     //MARK: - Grid Action
     

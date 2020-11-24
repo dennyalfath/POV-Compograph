@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Beb-lJ-mih">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Beb-lJ-mih">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -17,6 +17,9 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DR5" translatesAutoresizingMaskIntoConstraints="NO" id="ZhN-9q-79P">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="215"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="215" id="RW1-nH-rq8"/>
                                 </constraints>
@@ -62,35 +65,33 @@
                                     <action selector="didTapSegment:" destination="Beb-lJ-mih" eventType="valueChanged" id="Lme-2j-yAs"/>
                                 </connections>
                             </segmentedControl>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Diagonal Rule" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="k88-SN-jGz">
-                                <rect key="frame" x="120" y="10" width="174" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="jBu-7Y-tsw"/>
-                                </constraints>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Diagonal Rule" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k88-SN-jGz">
+                                <rect key="frame" x="40" y="10" width="334" height="196"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="k88-SN-jGz" firstAttribute="top" secondItem="mNA-Yf-mdR" secondAttribute="top" constant="10" id="CHc-EM-mKy"/>
                             <constraint firstItem="MG9-aw-xhv" firstAttribute="trailing" secondItem="cu4-ir-ogd" secondAttribute="trailing" constant="20" id="Czn-LE-Dro"/>
                             <constraint firstItem="kwI-la-Fzv" firstAttribute="top" secondItem="cu4-ir-ogd" secondAttribute="bottom" constant="20" id="GDu-Lp-mt4"/>
                             <constraint firstItem="Cci-j5-68j" firstAttribute="trailing" secondItem="MG9-aw-xhv" secondAttribute="trailing" id="H0A-aP-cEc"/>
-                            <constraint firstItem="MG9-aw-xhv" firstAttribute="trailing" secondItem="k88-SN-jGz" secondAttribute="trailing" constant="120" id="H9h-gy-09h"/>
                             <constraint firstItem="Cci-j5-68j" firstAttribute="leading" secondItem="MG9-aw-xhv" secondAttribute="leading" id="LA4-Kl-8sv"/>
                             <constraint firstItem="ZhN-9q-79P" firstAttribute="leading" secondItem="MG9-aw-xhv" secondAttribute="leading" id="Mg2-LC-TcT"/>
                             <constraint firstItem="OKe-Jz-lrZ" firstAttribute="leading" secondItem="MG9-aw-xhv" secondAttribute="leading" id="MqE-i6-SBl"/>
+                            <constraint firstItem="cu4-ir-ogd" firstAttribute="top" secondItem="k88-SN-jGz" secondAttribute="bottom" constant="29" id="NTk-rU-Qeo"/>
                             <constraint firstItem="OKe-Jz-lrZ" firstAttribute="trailing" secondItem="MG9-aw-xhv" secondAttribute="trailing" id="QWX-NU-3w0"/>
                             <constraint firstItem="cu4-ir-ogd" firstAttribute="leading" secondItem="MG9-aw-xhv" secondAttribute="leading" constant="20" id="SDE-pD-H3H"/>
                             <constraint firstItem="cu4-ir-ogd" firstAttribute="top" secondItem="ZhN-9q-79P" secondAttribute="bottom" constant="20" id="VPg-eF-Msn"/>
+                            <constraint firstItem="k88-SN-jGz" firstAttribute="leading" secondItem="MG9-aw-xhv" secondAttribute="leading" constant="40" id="Ybt-9A-RZn"/>
                             <constraint firstItem="ZhN-9q-79P" firstAttribute="top" secondItem="mNA-Yf-mdR" secondAttribute="top" id="ZuM-3A-LpU"/>
                             <constraint firstItem="OKe-Jz-lrZ" firstAttribute="top" secondItem="cu4-ir-ogd" secondAttribute="bottom" constant="20" id="aXA-pS-MUA"/>
                             <constraint firstItem="ZhN-9q-79P" firstAttribute="trailing" secondItem="MG9-aw-xhv" secondAttribute="trailing" id="dJV-Fj-Rws"/>
+                            <constraint firstItem="k88-SN-jGz" firstAttribute="top" secondItem="mNA-Yf-mdR" secondAttribute="top" constant="10" id="eQR-6R-gsQ"/>
+                            <constraint firstItem="MG9-aw-xhv" firstAttribute="trailing" secondItem="k88-SN-jGz" secondAttribute="trailing" constant="40" id="esq-Fw-fQv"/>
                             <constraint firstItem="Cci-j5-68j" firstAttribute="top" secondItem="cu4-ir-ogd" secondAttribute="bottom" constant="20" id="tt0-Tm-5fp"/>
                             <constraint firstItem="kwI-la-Fzv" firstAttribute="leading" secondItem="MG9-aw-xhv" secondAttribute="leading" id="vj1-au-msC"/>
-                            <constraint firstItem="k88-SN-jGz" firstAttribute="leading" secondItem="MG9-aw-xhv" secondAttribute="leading" constant="120" id="ySX-Tl-te7"/>
                             <constraint firstItem="kwI-la-Fzv" firstAttribute="trailing" secondItem="MG9-aw-xhv" secondAttribute="trailing" id="z1w-2f-eyo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MG9-aw-xhv"/>
@@ -117,6 +118,9 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DROV" translatesAutoresizingMaskIntoConstraints="NO" id="chb-DI-UiJ">
                                 <rect key="frame" x="20" y="0.0" width="374" height="200"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="RgW-hz-DhR"/>
                                 </constraints>
@@ -160,6 +164,9 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DR1" translatesAutoresizingMaskIntoConstraints="NO" id="BZp-DJ-8F5">
                                 <rect key="frame" x="20" y="0.0" width="374" height="200"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="Aoi-Pz-gzL"/>
                                 </constraints>
@@ -206,18 +213,30 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DR2" translatesAutoresizingMaskIntoConstraints="NO" id="Nhi-VL-nRI">
                                 <rect key="frame" x="20" y="17" width="175" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DR3" translatesAutoresizingMaskIntoConstraints="NO" id="zIz-Rc-eEr">
                                 <rect key="frame" x="211" y="17" width="175" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DR4" translatesAutoresizingMaskIntoConstraints="NO" id="T74-Fl-kFn">
                                 <rect key="frame" x="25" y="155" width="166" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DR5" translatesAutoresizingMaskIntoConstraints="NO" id="DUP-lV-ibb">
                                 <rect key="frame" x="211" y="155" width="175" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

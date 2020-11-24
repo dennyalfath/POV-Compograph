@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -17,6 +17,9 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZBD-kf-KmK">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="215"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="215" id="obx-LV-QhG"/>
                                 </constraints>
@@ -62,32 +65,30 @@
                                     <action selector="didTapSegment:" destination="7kL-p7-FsZ" eventType="valueChanged" id="nmS-n3-2zR"/>
                                 </connections>
                             </segmentedControl>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Golden Triangle" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kNZ-w1-YWD">
-                                <rect key="frame" x="120" y="10" width="174" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="YMS-Vw-p8P"/>
-                                </constraints>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Golden Triangle" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kNZ-w1-YWD">
+                                <rect key="frame" x="40" y="10" width="334" height="196"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="kNZ-w1-YWD" firstAttribute="leading" secondItem="XFs-0J-QBa" secondAttribute="leading" constant="120" id="1az-Rb-NBb"/>
                             <constraint firstItem="evC-e7-E5L" firstAttribute="trailing" secondItem="XFs-0J-QBa" secondAttribute="trailing" id="4Y3-qD-eAr"/>
                             <constraint firstItem="4HJ-tQ-MmW" firstAttribute="top" secondItem="1pL-Im-YqN" secondAttribute="bottom" constant="20" id="7N8-Am-Foq"/>
+                            <constraint firstItem="kNZ-w1-YWD" firstAttribute="leading" secondItem="XFs-0J-QBa" secondAttribute="leading" constant="40" id="BRb-LN-TOP"/>
                             <constraint firstItem="Kv8-04-4Pg" firstAttribute="top" secondItem="1pL-Im-YqN" secondAttribute="bottom" constant="20" id="C1K-q9-PcW"/>
-                            <constraint firstItem="kNZ-w1-YWD" firstAttribute="top" secondItem="qsu-vS-uMq" secondAttribute="top" constant="10" id="JFF-SJ-SCb"/>
                             <constraint firstItem="4HJ-tQ-MmW" firstAttribute="leading" secondItem="XFs-0J-QBa" secondAttribute="leading" id="KlK-46-OCg"/>
                             <constraint firstItem="1pL-Im-YqN" firstAttribute="leading" secondItem="XFs-0J-QBa" secondAttribute="leading" constant="20" id="Tkd-zk-I0j"/>
                             <constraint firstItem="ZBD-kf-KmK" firstAttribute="top" secondItem="qsu-vS-uMq" secondAttribute="top" id="WRG-dU-6OJ"/>
+                            <constraint firstItem="1pL-Im-YqN" firstAttribute="top" secondItem="kNZ-w1-YWD" secondAttribute="bottom" constant="29" id="WlG-em-Ex2"/>
                             <constraint firstItem="1pL-Im-YqN" firstAttribute="top" secondItem="ZBD-kf-KmK" secondAttribute="bottom" constant="20" id="a0L-7v-c6t"/>
                             <constraint firstItem="ZBD-kf-KmK" firstAttribute="trailing" secondItem="XFs-0J-QBa" secondAttribute="trailing" id="gda-Cx-Yux"/>
                             <constraint firstItem="4HJ-tQ-MmW" firstAttribute="trailing" secondItem="XFs-0J-QBa" secondAttribute="trailing" id="hqT-aU-hCl"/>
                             <constraint firstItem="evC-e7-E5L" firstAttribute="top" secondItem="1pL-Im-YqN" secondAttribute="bottom" constant="20" id="kx3-qN-gDY"/>
-                            <constraint firstItem="XFs-0J-QBa" firstAttribute="trailing" secondItem="kNZ-w1-YWD" secondAttribute="trailing" constant="120" id="mkV-2e-Y1o"/>
                             <constraint firstItem="ZBD-kf-KmK" firstAttribute="leading" secondItem="XFs-0J-QBa" secondAttribute="leading" id="mqG-i3-5t4"/>
+                            <constraint firstItem="XFs-0J-QBa" firstAttribute="trailing" secondItem="kNZ-w1-YWD" secondAttribute="trailing" constant="40" id="oMG-o6-TE0"/>
+                            <constraint firstItem="kNZ-w1-YWD" firstAttribute="top" secondItem="qsu-vS-uMq" secondAttribute="top" constant="10" id="pE3-jd-Cow"/>
                             <constraint firstItem="XFs-0J-QBa" firstAttribute="trailing" secondItem="1pL-Im-YqN" secondAttribute="trailing" constant="20" id="rl3-La-zkj"/>
                             <constraint firstItem="evC-e7-E5L" firstAttribute="leading" secondItem="XFs-0J-QBa" secondAttribute="leading" id="rlO-wV-pze"/>
                             <constraint firstItem="Kv8-04-4Pg" firstAttribute="trailing" secondItem="XFs-0J-QBa" secondAttribute="trailing" id="rm9-hf-sS3"/>
@@ -117,6 +118,9 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GoldenTriangleOV" translatesAutoresizingMaskIntoConstraints="NO" id="D8c-7c-XQH">
                                 <rect key="frame" x="20" y="0.0" width="374" height="200"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="Laq-l7-ChM"/>
                                 </constraints>
@@ -169,6 +173,9 @@
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GTHow1" translatesAutoresizingMaskIntoConstraints="NO" id="Wbe-SO-FLX">
                                 <rect key="frame" x="20" y="0.0" width="374" height="200"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="CSg-Fq-abZ"/>
                                 </constraints>
@@ -204,26 +211,44 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="eww-sD-yjD">
                                 <rect key="frame" x="20" y="7" width="175" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="12" translatesAutoresizingMaskIntoConstraints="NO" id="2pF-wb-aTg">
                                 <rect key="frame" x="219" y="7" width="175" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="11" translatesAutoresizingMaskIntoConstraints="NO" id="MaA-es-Gpb">
                                 <rect key="frame" x="20" y="173" width="175" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="cXb-sD-SHF">
                                 <rect key="frame" x="219" y="173" width="175" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="Zrv-7R-d75">
                                 <rect key="frame" x="20" y="325" width="175" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="7" translatesAutoresizingMaskIntoConstraints="NO" id="n4O-xP-Lyk">
                                 <rect key="frame" x="219" y="325" width="175" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

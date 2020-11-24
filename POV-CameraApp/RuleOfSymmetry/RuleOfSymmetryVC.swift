@@ -18,9 +18,19 @@ class RuleOfSymmetryVC: UIViewController {
         return .lightContent
     }
     
+    @objc private func userChangedTextSize(notification: Notification) {
+        // Replace textStyle with whatever textStyle you want for your segmented control
+        segmentedControl.setTitleTextAttributes([
+            .font: UIFont.preferredFont(forTextStyle: .body)
+                    ], for: UIControl.State())
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        NotificationCenter.default.addObserver(self,
+        selector:#selector(userChangedTextSize(notification:)),
+        name: UIContentSizeCategory.didChangeNotification,
+        object: nil)
         setupView()
     }
     
